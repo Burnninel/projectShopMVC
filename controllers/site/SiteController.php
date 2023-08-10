@@ -10,8 +10,7 @@
 class SiteController extends Controller
 {
 
-	public function index()
-	{		
+	public function index() {		
 
 		$this->view('site/home/index.php');
 

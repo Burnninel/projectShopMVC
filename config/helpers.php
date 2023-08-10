@@ -8,12 +8,9 @@
 *
 **/
 
-define('LOCAL_URL', '/pasta_do_projeto');
+define('LOCAL_URL', '/shopMVC');
 
-if($env == "dev"){
-	define('LOCAL_URL', '/pasta_do_projeto');
-}
-elseif($env == "prod"){
+if($env == "prod"){
 	define('LOCAL_URL', 'https://www.google.com.br/');
 }
 

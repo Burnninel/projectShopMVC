@@ -1,0 +1,122 @@
+#titleCarousel {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#containerBody {
+    width: 100%;
+}
+
+.carouselBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#carouselShop {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#myCarousel {
+    width: 1000px;
+}
+  
+.cardItemShop {
+    width: 333px;
+    margin: 0px 12px;
+    padding: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    #myCarousel {
+        width: 800px;
+    }    
+    
+    .cardItemShop {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #three {
+        display: none;
+    }
+    
+    #four {
+        display: none;
+    }
+
+    #seven{
+        display: none;
+    }
+
+    #eitch {
+        display: none;
+    }
+}
+
+.imgItem {
+    height: 240px;
+    width: 100%;
+}
+
+.formAddressItemShop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+}
+
+.title {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.productValue {
+    font-size: 14px;
+}
+
+.parcelProductValue {
+    font-size: 12px;
+}
+
+.btnCarousel {
+    cursor: pointer;
+}
+
+.btnBuyCarousel {
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #000000;
+    color: #fff;
+    height: 35px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btnBuyCarousel:hover {
+    background-color: #000000e4;
+}
+
+.svgCarouselShop {
+    height: 30px;
+    width: 30px;
+    color: #000000;
+}
+
+.svgCarousel {
+    height: 30px;
+    width: 30px;
+    color: #000000;
+}

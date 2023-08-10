@@ -1,0 +1,169 @@
+#footerHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    border-top:  1px #cfcbcb solid;
+    padding: 15px 15px 0px;
+}
+
+#interactiveElementsFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 62rem;
+}
+
+.itensFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.titleFooter {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+#containerCreateFooter {
+    text-align: center;
+    width: 100%;
+    height: 45px;
+}
+
+#btnCreateAccountFooter {
+    border: none;
+    outline: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 100%;
+    height: 45px;
+    font-weight: 700;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 4px;
+}
+
+#btnCreateAccountFooter:hover {
+    opacity: 0.9;
+}
+
+#svgSocialFooter {
+    text-align: center;
+    width: 100%;
+    height: 45px;
+}
+
+.svgSocialFooter {
+    height: 24px;
+    width: 24px;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.svgSocialFooter:hover {
+    opacity: 0.8;
+}
+
+#formFooter {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#inputFooter {
+    height: 45px;
+    width: 70%;
+    padding: 0px 12px;
+    outline: none;
+    letter-spacing: -0.9px;
+    font-size: 14px;
+    color: #000000;
+}
+
+#inputFooter:hover::placeholder {
+    color: #000000;
+}
+
+#btnFooter {
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    height: 45px;
+    width: 30%;
+    background-color: #000000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#btnFooter:hover {
+    opacity: 0.9;
+}
+
+#infoFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 120px;
+}
+
+#infoShopFooter {
+    font-size: 12px;
+}
+
+#infoWebShopFooter {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    word-spacing: -1.5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+#logoFooter {
+    font-family: 'Comforter', cursive;
+    text-align: center;
+    width: 100%;
+    font-size: 26px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .svgSocialFooter {
+        height: 20px;
+        width: 20px;
+    }
+
+    .titleFooter {
+        font-size: 12px;
+    }
+    
+    #interactiveElementsFooter {
+     width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #interactiveElementsFooter {
+        flex-direction: column;
+    }
+    
+
+    .itensFooter {
+        margin: 20px;
+    }
+}

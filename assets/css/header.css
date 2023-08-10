@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700&display=swap');
+
+* {
+  font-family: 'Inconsolata', monospace;
+}
+
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;;
+  right: 0;
+  z-index: 100;
+  user-select: none;
+  caret-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #262323;
+  width: 100%;
+  padding: 26px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+#menu {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#logo {
+  font-size: 26px;
+  font-family: 'Comforter', cursive;
+}
+
+#myProfile {
+  cursor: pointer;
+}
+
+.svgProfile {
+  color: white;
+  height: 20px;
+}
+
+.dropdown-menu:focus {
+  background-color: #262323;
+}
+
+.dropdown-toggle.dropdown-toggle-unstyled {
+  border: none;
+  padding: 0;
+}
+
+.dropdown-toggle.dropdown-toggle-unstyled::after {
+  display: none;
+}
+
+.item-dropdown  {
+  width: 100%;
+  background: none;
+  text-align: left;
+  border: none;
+}
+
+.item-dropdown:hover {
+  background-color: #f5f1f1;
+}
+

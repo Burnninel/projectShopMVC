@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/header.css">
   <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/home/footerHome.css">
   <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/home/home.css">
+  <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/home/prominenceItens.css">
   <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/home/responsiveProminence.css">
   <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/home/bannerHome.css">
   <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/home/carousel.css">

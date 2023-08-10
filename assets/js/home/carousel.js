@@ -29,7 +29,7 @@ function carousel(idCarousel, active) {
 
 function carouselComponent() {
   var carousel =  ` <div class="carousel slide" id="myCarousel"> <div class="carousel-inner"></div> </div>`;
-  $('#carouselShop').append(carousel);
+  $('#componentCarousel').append(carousel);
 };
 
 function carouselArrows(className, id, slide, svg) {
@@ -40,7 +40,7 @@ function carouselArrows(className, id, slide, svg) {
     </div>
   `;
 
-  $('#carouselShop').append(arrowsElement);
+  $('#componentCarousel').append(arrowsElement);
 };
 
 var svgNext = `<svg class="svgCarousel" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>`;

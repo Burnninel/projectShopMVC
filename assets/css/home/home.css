@@ -18,3 +18,72 @@ body::-webkit-scrollbar-thumb {
     background-color: #fff;
     border-radius: 5px;
 }
+
+
+#imgShopAll {
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+}
+
+#componentProminenceItens {
+    width: 100%;
+    margin-top: 18px;
+}
+
+#titleProminence {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+#imgCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.firstCardImgProminence {
+    display: flex;
+}
+
+.secondCardImgProminence {
+    display: flex;
+}
+
+.itemImgProminence {
+    height: 295px;
+    margin: 10px;
+}
+
+.cardItemImgProminence {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.btnCardImgProminence {
+    text-transform: uppercase;
+    height: 30px;
+    width: 80%;
+    background-color: #fff;
+    font-size: 14px;
+    border: 1px solid #262323;
+    border-radius: 2px;
+}
+
+.btnCardImgProminenceHover {
+    text-transform: uppercase;
+    height: 30px;
+    width: 80%;
+    font-size: 14px;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 2px;
+}

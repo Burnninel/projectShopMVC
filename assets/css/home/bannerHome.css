@@ -1,57 +1,57 @@
-#containerBannerSnow {
+#componentBannerSnow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 792px) {
+  #componentBannerSnow {
+    flex-direction: column;
+  }
+}
+
+.imgBanner {
+  width: 99%;
+  margin: 2px;
+}
+
+.containerImgBanner {
+  position: relative;
+}
+
+.elementGroupBannerSnow {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 50px;
-    width: 100%;
-    margin-bottom: 40px;
-  }
-  
-  @media screen and (max-width: 792px) {
-    #containerBannerSnow {
-      flex-direction: column;
-    }
-  }
-  
-  .imgBanner {
-    width: 99%;
-    margin: 2px;
-  }
-  
-  .containerImgBanner {
-    position: relative;
-  }
-  
-  .elementGroupBannerSnow {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-  }
-  
-  .titleBannerSnow {
-      text-transform: uppercase;
-      color: #fff;
-      padding: 15px;
-      font-size: 46px;
-      font-weight: 700;
-      letter-spacing: 4px;
-  }
-  
-  .btnBannerSnow {
-      border: none;
-      text-transform: uppercase;
-      font-weight: 500;
-      font-size: 24px;
-      height: 40px;
-      border-radius: 3px;
-      background-color: #fff;
-  }
-  
-  .btnBannerSnow:hover {
-      background-color: #000000;
-      color: #fff;
-  }
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titleBannerSnow {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 15px;
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.btnBannerSnow {
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.btnBannerSnow:hover {
+    background-color: #000000;
+    color: #fff;
+}

@@ -9,12 +9,11 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/header.css">
+  <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/home/footerHome.css">
   <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/home/home.css">
-  <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/home/prominenceItens.css">
   <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/home/responsiveProminence.css">
   <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/home/bannerHome.css">
   <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/home/carousel.css">
-  <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/home/footerHome.css">
 
   <title>Home</title>
 

@@ -7,12 +7,11 @@
 * @author Code Universe
 *
 **/
-class SiteController extends Controller
-{
+class SignUpController extends Controller {
 
 	public function index() {		
 
-		$this->view('site/home/index.php');
+		$this->view('site/signUp/signUp.php');
 
 	}
 

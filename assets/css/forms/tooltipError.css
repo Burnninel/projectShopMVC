@@ -1,0 +1,13 @@
+/* This is the CSS of the error tooltip that will be implemented next */
+
+.custom-tooltip .tooltip-inner  {
+    color: #fff; 
+    font-size: 12px;
+    border-radius: 4px;  
+    margin-top: 4px;
+    text-transform: initial;
+}
+
+.custom-tooltip .tooltip-arrow {
+    margin-top: 4px;
+}

@@ -1,0 +1,20 @@
+#signInComponent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    caret-color: transparent;
+}
+
+#formSignIn {
+    margin-bottom: 30px;
+}
+
+#templateSignIn {    
+    width: 420px;
+    padding: 20px;
+    margin-top: 220px;
+    border: 1px #cfcbcb solid;
+    border-radius: 12px;
+    position: relative;
+}

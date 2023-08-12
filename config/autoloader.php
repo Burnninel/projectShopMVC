@@ -23,6 +23,7 @@ $paths = array(
   'helpers',
   'models',
   'models/db',
+  'models/user',
 );
 
 /**

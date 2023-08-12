@@ -1,4 +1,4 @@
-form('templateSignIn', '../php/validationLogin', 'post', 'signInComponent', 'templateSignIn')
+form('templateSignIn', 'post', 'signInComponent', 'templateSignIn')
 
 titleForm('titleSingIn', 'Acesse sua conta', 'templateSignIn')
 

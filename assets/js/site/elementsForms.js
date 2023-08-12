@@ -1,5 +1,5 @@
-function form(id, action, method, body, className) {
-    var form = `<form id="${id}" action="${action}.php" method="${method}" class="${className}"></form>`;
+function form(id, method, body, className) {
+    var form = `<form id="${id}" method="${method}" class="${className}"></form>`;
 
     $('#' + body).append(form);
 };
@@ -17,7 +17,7 @@ function formBody(id, template) {
 };
 
 function btnForm(id, title, element) {
-    var btn = `<button type="submit" class="buttonForms" id="${id}">${title}</button>`;
+    var btn = `<button type="button" class="buttonForms" id="${id}">${title}</button>`;
 
     $('#' + element).append(btn);
 };

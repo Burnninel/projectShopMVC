@@ -4,6 +4,7 @@
     justify-content: center;
     user-select: none;
     caret-color: transparent;
+    height: 100vh;
 }
 
 #formSignIn {
@@ -13,7 +14,6 @@
 #templateSignIn {    
     width: 420px;
     padding: 20px;
-    margin-top: 220px;
     border: 1px #cfcbcb solid;
     border-radius: 12px;
     position: relative;

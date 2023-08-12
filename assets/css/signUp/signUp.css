@@ -1,0 +1,35 @@
+#signUpComponent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    caret-color: transparent;
+    height: 100vh;
+}
+
+#templateSignUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 460px;
+    padding: 24px;
+    border: 1px #cfcbcb solid;
+    border-radius: 12px;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 12px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#createNewAccount {
+    margin-top: 30px;
+}

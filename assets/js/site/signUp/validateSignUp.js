@@ -1,41 +1,60 @@
-var credentialsInvalid = false;
+var credentialsValid = true;
 
-function validateSignUp(id) {
-    if (!id) {
-        return true;
+function validateInput(id) {
+    if(!id) {
+        return false;
     };
-
-    return false;
+    
+    return true;
 };
 
-function valuesForm() {
+function validateForm() {
     var name = $('#name').val();
     var lastName = $('#lastname').val();
     var password = $('#password').val();
 
-    credentialsInvalid = validateSignUp(name) ||
-                         validateSignUp(lastName) ||
-                         validateSignUp(password);
+    credentialsValid = validateInput(name) ||
+                       validateInput(lastName) ||
+                       validateInput(password);
 };
 
-function validationEmail() {
+function validateEmail() {
+    var email = $('#email').val();
+    var emailRegex = /^\S+@\S+\.\S+$/;
+
+    if(!email.match(emailRegex)) {
+        credentialsValid = false;
+        console.log('emailRegex: ' + credentialsValid);
+        return;
+    };
+}
+
+function handleSubmit() {
     const form = $('#templateSignUp');
 
-    $.ajax({
-        url: 'http://localhost/shopMVC/submit',
-        type: 'POST',
-        data: form.serialize(),
-        dataType: 'json',
-        beforeSend: function() {
-            $('#btnCreateAccount').html('Carregando..');
-        },
-        complete: function(response) {
-            console.log(response.responseJSON.result)
-        }
-    });
+    if(credentialsValid) {
+        $.ajax({
+            url: 'http://localhost/shopMVC/submit',
+            type: 'POST',
+            data: form.serialize(),
+            dataType: 'json',
+            beforeSend: function() {
+                $('#btnCreateAccount').text('Carregando...');
+            },
+            complete: function(response) {
+                console.log('back: ' + response.responseJSON.result);
+                if(response.responseJSON.result == false) {
+                    credentialsValid = false;
+                    console.log('front: ' + credentialsValid);
+                    return;
+                }
+            }
+        });
+    }
 };
 
 $('#btnCreateAccount').click(function() {
-    valuesForm();
-    validationEmail();
+    validateForm();
+    validateEmail();
+    handleSubmit();
 })

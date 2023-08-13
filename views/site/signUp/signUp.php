@@ -34,6 +34,8 @@
 
   <script src="<?php echo $url; ?>/assets/js/site/signUp/signUp.js"></script>
 
+  <script src="<?php echo $url; ?>/assets/js/site/signUp/validateSignUp.js"></script>
+
 </body>
 
 </html>

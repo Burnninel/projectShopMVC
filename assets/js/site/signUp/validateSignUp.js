@@ -1,7 +1,9 @@
 var credentialsValid = true;
 
-function validateInput(id) {
-    if(!id) {
+function validateInput(id, tooltip) {
+    if(!id.val()) {
+        errorSvg(id.attr('id') + 'Component', tooltip);
+        $('#' + id.attr('id')).addClass('inputFormStatusError');
         return false;
     };
     
@@ -9,13 +11,13 @@ function validateInput(id) {
 };
 
 function validateForm() {
-    var name = $('#name').val();
-    var lastName = $('#lastname').val();
-    var password = $('#password').val();
+    var name = $('#name');
+    var lastName = $('#lastname');
+    var password = $('#password');
 
-    credentialsValid = validateInput(name) ||
-                       validateInput(lastName) ||
-                       validateInput(password);
+    credentialsValid = validateInput(name, 'Digite um nome válido') ||
+                       validateInput(lastName, 'Digite um sobrenome válido') ||
+                       validateInput(password, 'Digite uma senha válida');
 };
 
 function validateEmail() {
@@ -24,7 +26,8 @@ function validateEmail() {
 
     if(!email.match(emailRegex)) {
         credentialsValid = false;
-        console.log('emailRegex: ' + credentialsValid);
+        errorSvg('emailComponent', 'Email inválido');
+        $('#email').addClass('inputFormStatusError');
         return;
     };
 }
@@ -45,7 +48,8 @@ function handleSubmit() {
                 console.log('back: ' + response.responseJSON.result);
                 if(response.responseJSON.result == false) {
                     credentialsValid = false;
-                    console.log('front: ' + credentialsValid);
+                    errorSvg('emailComponent', 'Email invalido');
+                    $('#email').addClass('inputFormStatusError');
                     return;
                 }
             }
@@ -53,8 +57,24 @@ function handleSubmit() {
     }
 };
 
+function activeKeyup() {
+    $('#name, #lastname, #password').on('keyup', function() {
+        var inputIdSelected = $(this).attr('id');
+        var idParent = $(this).parent().attr('id');
+    
+        if ($(this).val().trim() !== '') {
+            $('#' + idParent + ' .svgError').hide();
+            $(`#${inputIdSelected}`).removeClass('inputFormStatusError');
+        } else {
+            $('#' + idParent + ' .svgError').show();
+            $(`#${inputIdSelected}`).addClass('inputFormStatusError');
+        };
+    });
+}
+
 $('#btnCreateAccount').click(function() {
     validateForm();
     validateEmail();
     handleSubmit();
+    activeKeyup();
 })

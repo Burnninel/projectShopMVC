@@ -18,4 +18,15 @@ class UserData {
 
     }
 
+    public function getUser($email, $password) {
+
+        $pdo = array(
+            ':email' => $email,
+            ':password' => $password
+        );
+
+        return $this->pdoQuery->fetch('SELECT * FROM usuario WHERE email = :email AND password = :password', $pdo);
+
+    }
+
 }

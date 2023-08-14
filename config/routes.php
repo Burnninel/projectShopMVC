@@ -19,6 +19,7 @@ $commonRoutes = array(
 // rotas POST
 $commonPost = array(
 	'submit' => 'SignUpController/signUp',
+	'login' => 'SignInController/signIn',
 );
 
 $commonRoutes = array_merge($commonRoutes, $commonPost);

@@ -36,6 +36,8 @@
 
   <script src="<?php echo $url; ?>/assets/js/site/signIn/validateSignIn.js"></script>
 
+  <script src="<?php echo $url; ?>/assets/js/site/statusForms.js"></script>
+
 </body>
 
 </html>

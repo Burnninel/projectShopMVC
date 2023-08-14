@@ -90,7 +90,7 @@ function activeKeyup() {
             $(`#${inputIdSelected}`).removeClass('inputFormStatusError');
         } else {
             $('#' + idParent + ' .svgError').show();
-            $(`#${inputIdSelected}`).addClass('inputFormStatusError');
+            $('#' + inputIdSelected).addClass('inputFormStatusError');
         };
     });
 }

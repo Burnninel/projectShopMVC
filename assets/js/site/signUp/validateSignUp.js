@@ -41,9 +41,7 @@ function handleSubmit() {
             type: 'POST',
             data: form.serialize(),
             dataType: 'json',
-            beforeSend: function() {
-                $('#btnCreateAccount').text('Carregando...');
-            },
+            
             complete: function(response) {
                 console.log('back: ' + response.responseJSON.result);
                 if(response.responseJSON.result == false) {
@@ -52,13 +50,38 @@ function handleSubmit() {
                     $('#email').addClass('inputFormStatusError');
                     return;
                 }
+                setTimeout(function() {
+                    $('#templateSignUp').html(` 
+                        <div class="templateLoading">
+                            <div class="spinner-border" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>`
+                    );
+                })
+                setTimeout(function() {
+                    $('#templateSignUp').hide();
+                    $('#signUpComponent').append(`
+                        <div id="templateSuccess">
+                            <svg  id="svgSuccess" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span id="textSuccess">Conta criada com sucesso!</span>
+                        </div>
+                    `)
+                }, 1500)
+
+                setTimeout(function() {
+                    window.location.href = 'http://localhost/shopMVC/signIn';
+                }, 3000)
+
             }
         });
     }
 };
 
 function activeKeyup() {
-    $('#name, #lastname, #password').on('keyup', function() {
+    $('#name, #lastname, #email, #password').on('keyup', function() {
         var inputIdSelected = $(this).attr('id');
         var idParent = $(this).parent().attr('id');
     

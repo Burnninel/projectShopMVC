@@ -1,4 +1,4 @@
-form('templateSignIn', 'post', 'signInComponent', 'templateSignIn')
+form('templateSignIn', 'post', 'signInComponent')
 
 titleForm('titleSingIn', 'Acesse sua conta', 'templateSignIn')
 

@@ -1,5 +1,5 @@
-function form(id, method, body, className) {
-    var form = `<form id="${id}" method="${method}" class="${className}"></form>`;
+function form(id, method, body) {
+    var form = `<form id="${id}" method="${method}"></form>`;
 
     $('#' + body).append(form);
 };

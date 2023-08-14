@@ -7,15 +7,27 @@ function login() {
         data: form.serialize(),
         dataType: 'json',
         complete: function(response) {
-            console.log('back: ' + response.responseJSON.result);
-
             if(response.responseJSON.result == false) {
                 errorSvg('emailSingInContent', 'Email ou senha inválidos');
                 errorSvg('pwSingInContent', 'Email ou senha inválidos');
                 $('#emailSingIn').addClass('inputFormStatusError');
                 $('#pwSingIn').addClass('inputFormStatusError');
+                return;
             } 
+            setTimeout(function() {
+                $('body').html(` 
+                    <div id="signIn">
+                        <span class="loader"></span>
+                    </div>
+
+                `);
+            })
+            setTimeout(function() {
+                window.location.href = 'http://localhost/shopMVC/account';
+            }, 3000)
         }
+
+        
     });
 };
 

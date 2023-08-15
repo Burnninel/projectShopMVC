@@ -15,4 +15,16 @@ class AccountController extends Controller {
 
 	}
 
+	public function user() {
+		
+		$getID = new UserSession;
+		$userID = $getID->get('id');
+
+		$getInfos = new UserData;
+		$infosUser = $getInfos->getInfosUser($userID);
+
+		var_dump($infosUser);
+
+	}
+
 }

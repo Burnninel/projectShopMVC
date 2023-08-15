@@ -74,8 +74,7 @@
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/headerProfile.js"></script>
 
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/address/bodyFormAddress.js"></script>
-    <script src="<?php echo $url; ?>/assets/js/site/userAccount/address/apiCep.js"></script>
-    <script src="<?php echo $url; ?>/assets/js/site/userAccount/address/regexCep.js"></script>
+    <script src="<?php echo $url; ?>/assets/js/site/userAccount/address/cep.js"></script>
 
 </body>
 

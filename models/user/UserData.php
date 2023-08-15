@@ -29,4 +29,14 @@ class UserData {
 
     }
 
+    public function getInfosUser($id) {
+
+        $pdo = array(
+            ':id' => $id,
+        );
+
+        return $this->pdoQuery->fetch('SELECT name, lastName, imgProfile, dateCreate FROM usuario WHERE id = :id', $pdo);
+
+    }
+
 }

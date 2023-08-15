@@ -71,11 +71,11 @@ function handleSubmit() {
                             <span id="textSuccess">Conta criada com sucesso!</span>
                         </div>
                     `)
-                }, 1500)
+                }, 2500)
 
                 setTimeout(function() {
                     window.location.href = 'http://localhost/shopMVC/signIn';
-                }, 3000)
+                }, 4500)
 
             }
         });

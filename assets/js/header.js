@@ -36,17 +36,23 @@ function itemDropdown(id, title) {
     $('.dropdown-menu').append(item)
 }
 
-itemDropdown('signIn', 'Entrar');
+itemDropdown('signInDropdown', 'Entrar');
 itemDropdown('signUp', 'Cadastre-se');
 
-$(document).on('click', '#signIn', function() {
+$(document).on('click', '#signInDropdown', function() {
 
-    window.location.href = 'http://localhost/trab/pages/signIn.html';
+    window.location.href = 'http://localhost/shopMVC/signIn';
     
 });
 
 $(document).on('click', '#signUp', function() {
    
-    window.location.href = 'http://localhost/trab/pages/signUp.html';
+    window.location.href = 'http://localhost/shopMVC/signUp';
+    
+});
+
+$(document).on('click', '#logo', function() {
+   
+    window.location.href = 'http://localhost/shopMVC/';
     
 });

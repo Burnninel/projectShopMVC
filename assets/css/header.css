@@ -34,6 +34,7 @@
 #logo {
   font-size: 26px;
   font-family: 'Comforter', cursive;
+  cursor: pointer;
 }
 
 #myProfile {

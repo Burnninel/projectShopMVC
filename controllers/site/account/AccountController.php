@@ -23,7 +23,7 @@ class AccountController extends Controller {
 		$getInfos = new UserData;
 		$infosUser = $getInfos->getInfosUser($userID);
 
-		var_dump($infosUser);
+		echo json_encode($infosUser, JSON_PRETTY_PRINT);
 
 	}
 

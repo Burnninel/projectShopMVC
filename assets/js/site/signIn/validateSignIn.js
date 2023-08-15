@@ -12,6 +12,7 @@ function login() {
                 errorSvg('pwSingInContent', 'Email ou senha inválidos');
                 $('#emailSingIn').addClass('inputFormStatusError');
                 $('#pwSingIn').addClass('inputFormStatusError');
+                addErrorForm('templateSignIn', 'buttonSubmitForm');
                 return;
             } 
             setTimeout(function() {
@@ -26,7 +27,6 @@ function login() {
                 window.location.href = 'http://localhost/shopMVC/account';
             }, 3000)
         }
-
         
     });
 };
@@ -49,4 +49,6 @@ function activeKeyup() {
 $('#buttonSubmitForm').click(function() {
     login();
     activeKeyup();
+    removeErrorForm('templateSignIn', 'buttonSubmitForm');
+
 })

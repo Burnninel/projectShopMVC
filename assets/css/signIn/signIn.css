@@ -5,10 +5,14 @@
     user-select: none;
     caret-color: transparent;
     height: 100vh;
+    background-image: linear-gradient(
+      15deg, #000, #07173d
+  );
 }
 
 #formSignIn {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    margin-top: 30px;
 }
 
 #templateSignIn {    

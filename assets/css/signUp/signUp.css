@@ -5,6 +5,10 @@
     user-select: none;
     caret-color: transparent;
     height: 100vh;
+
+     background-image: linear-gradient(
+        15deg, #000, #07173d
+    );
 }
 
 #templateSignUp {
@@ -16,7 +20,7 @@
     width: 460px;
     height: 318px;
     padding: 24px;
-    border: 1px #cfcbcb solid;
+    border: 1px #fff solid;
     border-radius: 12px;
 }
 
@@ -28,7 +32,7 @@
     margin-top: 12px;
     padding: 10px;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
 }
 
 #btnCreateAccount {

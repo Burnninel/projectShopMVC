@@ -3,10 +3,7 @@
     text-transform: uppercase;
     font-size: 22px;
     font-weight: 700;
-}
-
-#titleSingIn {
-    margin-bottom: 30px;    
+    color: #fff;
 }
 
 .inputStyling {
@@ -15,13 +12,14 @@
     width: 100%;
 }
 
-
 .inputFormStatus {
     outline: none;
     user-select: auto;
-    caret-color: black;
+    caret-color: #fff;
+    background-color: transparent;
+    color: #fff;
     border: none;
-    border-bottom: 1px #cfcbcb solid;
+    border-bottom: 1px #fff solid;
     font-size: 14px;
     margin-bottom: 24px;
     width: 100%;
@@ -29,6 +27,7 @@
 
 .inputFormStatus::placeholder { 
     text-transform: uppercase;
+    color: #fff;
 }
 
 .inputFormStatusError {
@@ -61,17 +60,18 @@
     position: absolute;
     border: none;    
     text-transform: uppercase;
-    background-color: #030303;
+    color: #fff;
+    background-color: transparent;
+    border-top: 1px #fff solid;
     color: #fff;
     width: 100%;
-    height: 40px;
+    height: 45px;
     border-radius: 0px 0px 8px 8px;
     bottom: 0;
     right: 0;
 }
 
 .buttonForms:hover {
-    background-color: transparent;
-    border-top:  1px #cfcbcb solid;
-    color: #030303;
+    background-color: #faeeeee9;
+    color: #000;
 }

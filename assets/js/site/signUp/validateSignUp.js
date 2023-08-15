@@ -2,6 +2,7 @@ var credentialsValid = true;
 
 function validateInput(id, tooltip) {
     if(!id.val()) {
+       
         errorSvg(id.attr('id') + 'Component', tooltip);
         $('#' + id.attr('id')).addClass('inputFormStatusError');
         return false;
@@ -9,6 +10,32 @@ function validateInput(id, tooltip) {
     
     return true;
 };
+
+function removeErrorForm() {
+    $('input').on('keyup', function() {
+        var lastInput = $('input:last');
+    
+        if (!lastInput.hasClass('inputFormStatusError')) {
+            $('#templateSignUp').css('border-color', '#fff');
+            $('#btnCreateAccount').css('border-color', '#fff');
+        } else {
+            $('#templateSignUp').css('border-color', '#ec2626');
+            $('#btnCreateAccount').css('border-color', '#ec2626');
+        }
+    });
+}
+
+function addErrorForm() {
+    var input = $('input').hasClass('inputFormStatusError')
+
+    if(input) {
+        $('#templateSignUp').css('border-color', '#ec2626');
+        $('#btnCreateAccount').css('border-color', '#ec2626');
+    } else {
+        $('#templateSignUp').css('border-color', '#fff');
+        $('#btnCreateAccount').css('border-color', '#fff');
+    }
+}
 
 function validateForm() {
     var name = $('#name');
@@ -26,6 +53,7 @@ function validateEmail() {
 
     if(!email.match(emailRegex)) {
         credentialsValid = false;
+        $('#templateSignUp').css('border: 1px #ec2626 solid !important;');
         errorSvg('emailComponent', 'Email inválido');
         $('#email').addClass('inputFormStatusError');
         return;
@@ -93,11 +121,13 @@ function activeKeyup() {
             $('#' + inputIdSelected).addClass('inputFormStatusError');
         };
     });
-}
+};
 
 $('#btnCreateAccount').click(function() {
     validateForm();
     validateEmail();
     handleSubmit();
     activeKeyup();
+    addErrorForm();
+    removeErrorForm();
 })

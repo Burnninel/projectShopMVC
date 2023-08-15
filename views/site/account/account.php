@@ -78,11 +78,20 @@
     <script src="<?php echo $url; ?>/assets/js/header.js"></script>
 
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/account.js"></script>
-
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/headerProfile.js"></script>
+    <script src="<?php echo $url; ?>/assets/js/site/userAccount/alterCardAddress.js"></script>
 
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/address/bodyFormAddress.js"></script>
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/address/cep.js"></script>
+
+    <script src="<?php echo $url; ?>/assets/js/site/userAccount/card/bodyFormCard.js"></script>
+    <script src="<?php echo $url; ?>/assets/js/site/userAccount/card/card.js"></script>
+    <script src="<?php echo $url; ?>/assets/js/site/userAccount/card/number.js"></script>
+    <script src="<?php echo $url; ?>/assets/js/site/userAccount/card/security.js"></script>
+    <script src="<?php echo $url; ?>/assets/js/site/userAccount/card/cardInfo.js"></script>
+    <script src="<?php echo $url; ?>/assets/js/site/userAccount/card/regex.js"></script>
+    
+    <script src="<?php echo $url; ?>/assets/js/site/userAccount/lenghtInputNumber.js"></script>
 
 </body>
 

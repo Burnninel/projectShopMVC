@@ -11,32 +11,6 @@ function validateInput(id, tooltip) {
     return true;
 };
 
-function removeErrorForm() {
-    $('input').on('keyup', function() {
-        var lastInput = $('input:last');
-    
-        if (!lastInput.hasClass('inputFormStatusError')) {
-            $('#templateSignUp').css('border-color', '#fff');
-            $('#btnCreateAccount').css('border-color', '#fff');
-        } else {
-            $('#templateSignUp').css('border-color', '#ec2626');
-            $('#btnCreateAccount').css('border-color', '#ec2626');
-        }
-    });
-}
-
-function addErrorForm() {
-    var input = $('input').hasClass('inputFormStatusError')
-
-    if(input) {
-        $('#templateSignUp').css('border-color', '#ec2626');
-        $('#btnCreateAccount').css('border-color', '#ec2626');
-    } else {
-        $('#templateSignUp').css('border-color', '#fff');
-        $('#btnCreateAccount').css('border-color', '#fff');
-    }
-}
-
 function validateForm() {
     var name = $('#name');
     var lastName = $('#lastname');
@@ -128,6 +102,6 @@ $('#btnCreateAccount').click(function() {
     validateEmail();
     handleSubmit();
     activeKeyup();
-    addErrorForm();
-    removeErrorForm();
+    addErrorForm('templateSignUp', 'btnCreateAccount');
+    removeErrorForm('templateSignUp', 'btnCreateAccount');
 })

@@ -102,6 +102,6 @@ $('#btnCreateAccount').click(function() {
     validateEmail();
     handleSubmit();
     activeKeyup();
-    addErrorForm('templateSignUp', 'btnCreateAccount');
-    removeErrorForm('templateSignUp', 'btnCreateAccount');
+    addErrorForm('titleSingUp', 'templateSignUp', 'btnCreateAccount');
+    removeErrorForm('titleSingUp', 'templateSignUp', 'btnCreateAccount');
 })

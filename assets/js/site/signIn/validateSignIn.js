@@ -12,7 +12,7 @@ function login() {
                 errorSvg('pwSingInContent', 'Email ou senha inválidos');
                 $('#emailSingIn').addClass('inputFormStatusError');
                 $('#pwSingIn').addClass('inputFormStatusError');
-                addErrorForm('templateSignIn', 'buttonSubmitForm');
+                addErrorForm('titleSingIn', 'templateSignIn', 'buttonSubmitForm');
                 return;
             } 
             setTimeout(function() {
@@ -49,6 +49,5 @@ function activeKeyup() {
 $('#buttonSubmitForm').click(function() {
     login();
     activeKeyup();
-    removeErrorForm('templateSignIn', 'buttonSubmitForm');
-
+    removeErrorForm('titleSingIn', 'templateSignIn', 'buttonSubmitForm');
 })

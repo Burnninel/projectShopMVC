@@ -16,28 +16,36 @@ function errorSvg(element, tooltip) {
     console.log(element)
 };
 
-function removeErrorForm(form, btn) {
+function removeErrorForm(title, form, btn) {
     $('input').on('keyup', function() {
         var lastInput = $('input:last');
     
         if (!lastInput.hasClass('inputFormStatusError')) {
+            $('#' + title).css('color', '#fff');
             $('#' + form).css('border-color', '#fff');
             $('#' + btn).css('border-color', '#fff');
+            $('#' + btn).css('color', '#fff');
         } else {
+            $('#' + title).css('color', '#ec2626');
             $('#' + form).css('border-color', '#ec2626');
             $('#' + btn).css('border-color', '#ec2626');
+            $('#' + btn).css('color', '#ec2626');
         }
     });
 }
 
-function addErrorForm(form, btn) {
+function addErrorForm(title, form, btn) {
     var input = $('input').hasClass('inputFormStatusError')
 
     if(input) {
+        $('#' + title).css('color', '#ec2626');
         $('#' + form).css('border-color', '#ec2626');
         $('#' + btn).css('border-color', '#ec2626');
+        $('#' + btn).css('color', '#ec2626');
     } else {
+        $('#' + title).css('color', '#fff');
         $('#' + form).css('border-color', '#fff');
         $('#' + btn).css('border-color', '#fff');
+        $('#' + btn).css('color', '#fff');
     }
 }

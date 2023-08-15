@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/header.css">
     <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/forms/elementsForms.css">
     <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/account.css">
-    <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/modalUpload.css">
     <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/alterCardAddress.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/forms.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/modalUpload.css">
     <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/address.css">
     <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/bodyFormAddress.css">
     <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/card.css">

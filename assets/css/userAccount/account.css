@@ -5,6 +5,10 @@
     user-select: none;
     caret-color: transparent;
     height: 100vh;
+
+    background-image: linear-gradient(
+        15deg, #000, #07173d
+    );
 }
 
 .cardImgProfile {
@@ -18,8 +22,7 @@
 #myAccount {
     width: 480px;
     padding: 20px;
-    /* margin-top: 110px; */
-    border: 1px #cfcbcb solid;
+    border: 1px #fff solid;
     border-radius: 12px;
 }
 
@@ -27,7 +30,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 1px #cfcbcb solid;
+    border: 1px #fff solid;
     border-radius: 12px;
     width: 100%;
     padding: 15px;
@@ -40,7 +43,7 @@
     cursor: pointer;
     height: 80px;
     width: 80px;
-    border: 1px #cfcbcb solid;
+    border: 1px #fff solid;
     border-radius: 50%;
 }
 
@@ -57,6 +60,7 @@
 #myNickname {
     text-align: center;
     text-transform: uppercase;
+    color: #fff;
     margin-top: 8px;
     font-size: 12px;
 }

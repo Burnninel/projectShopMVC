@@ -1,0 +1,61 @@
+
+#headerAlterAddressCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#titleHeaderAddressCard {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+}
+
+.inputBodyInfo {
+    outline: none;
+    user-select: auto;
+    caret-color: black;
+    text-transform: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px #cfcbcb solid;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.inputFormStatusError {
+    border-bottom: 1px #ec2626d2 solid;
+}
+
+.inputFormStatusError::placeholder {
+    color:#ec2626d2;
+}
+
+.inputBodyInfo::placeholder { 
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+}
+
+.btnFormAccount {
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px #fff solid;
+    background-color: transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 16px;
+    width: 100%;
+    height: 25px;
+}
+
+.btnFormAccount:hover {
+    background-color: #ffffff0d;
+}

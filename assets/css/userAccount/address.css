@@ -3,20 +3,7 @@
     height: 100%;
 }
 
-#headerAlterAddressCard {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
 
-#titleHeaderAddressCard {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    width: 100%;
-}
 
 .svgInfosProfile {
     height: 18px;
@@ -26,31 +13,6 @@
 #formAddress {
     width: 100%;
     padding: 22px 12px 0px 6px;
-}
-
-.inputBodyInfo {
-    outline: none;
-    user-select: auto;
-    caret-color: black;
-    text-transform: none;
-    border: none;
-    border-bottom: 1px #cfcbcb solid;
-    font-size: 12px;
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-.inputFormStatusError {
-    border-bottom: 1px #ec2626d2 solid;
-}
-
-.inputFormStatusError::placeholder {
-    color:#ec2626d2;
-}
-
-.inputBodyInfo::placeholder { 
-    text-transform: uppercase;
-    font-size: 12px;
 }
 
 #contentComponentsCEP {
@@ -68,8 +30,9 @@
     width: 35px;
     margin-left: 12px;
     border-radius: 6px;
-    border: 1px #cfcbcb solid;
-    background-color: #fff;
+    border: 1px #fff solid;
+    background-color: transparent;
+    color: #fff;
 }
 
 .inputsAddress {
@@ -78,8 +41,7 @@
 }
 
 #btnSearchCEP:hover {
-    background-color: #000000;
-    color: #fff;
+    background-color: #ffffff0d;
 }
 
 #svgSearchBtn {
@@ -112,23 +74,4 @@
 
 #svgUf {
     width: 30%;
-}
-
-.btnFormAccount {
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #000000;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 500;
-    border: none;
-    border-radius: 16px;
-    width: 100%;
-    height: 25px;
-}
-
-.btnFormAccount:hover {
-    background-color: #fff;
-    color: #000000;
-    border: 1px #cfcbcb solid;
 }

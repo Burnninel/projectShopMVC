@@ -2,14 +2,81 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/header.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/forms/elementsForms.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/account.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/modalUpload.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/alterCardAddress.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/address.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/bodyFormAddress.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/card.css">
+
+    <title>Entre ou Cadastre-se</title>
+
 </head>
+
 <body>
 
-    <h1>opa</h1>
+    <header id="header"></header>
+
+    <div id="bodyAccount">
+        <div id="myAccount">
+            <div id="profileBody">
+                <div class="cardImgProfile">
+                    <div id="myPhoto" data-bs-toggle="modal" data-bs-target="#modalForm"></div>
+                    <div id="myNickname"></div>
+                    <div id="dateCreate">
+                        <span id="titleDate">Entrou em:</span>
+                        <span id="textDate"></span>
+                    </div>
+                </div>
+
+                <div id="infosProfile">
+
+                    <div id="headerAlterAddressCard"></div>
+
+                    <form action="../php/addAddress.php" method="post" id="formAddress"></form>
+
+                    <form action="../php/addCard.php" method="post" id="formCard"></form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalForm" aria-labelledby="modalForm" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" id="modalDialogForm">
+            <div class="modal-content" id="modalUploadPhoto">
+                <form class="formContent" action="../php/uploadPhoto.php" method="POST" enctype="multipart/form-data">
+                    <div class="custom-file-input-wrapper">
+                        <input id="inputQlq" class="custom-file-input d-none" type="file" name="arquivo">
+                        <label class="custom-file-name" for="inputQlq">Escolha um arquivo</label>
+                    </div>
+                    <button class="buttonSubmitForm" type="submit">enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-ylqH3Y93PFtxHgrFxqEDD3ub+U0JeAmqWKV8Vjbb/ZIu+TFCErhUoGzAqng+wQg6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <script src="<?php echo $url; ?>/assets/js/header.js"></script>
+
+    <script src="<?php echo $url; ?>/assets/js/site/userAccount/headerProfile.js"></script>
+
+    <script src="<?php echo $url; ?>/assets/js/site/userAccount/address/bodyFormAddress.js"></script>
+    <script src="<?php echo $url; ?>/assets/js/site/userAccount/address/apiCep.js"></script>
+    <script src="<?php echo $url; ?>/assets/js/site/userAccount/address/regexCep.js"></script>
 
 </body>
+
 </html>

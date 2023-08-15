@@ -1,0 +1,75 @@
+#modalDialogForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #modalUploadPhoto {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: 1px #030303 solid;
+      box-shadow: 0px 1px 12px 0px #070707;
+      padding: 20px;
+      width: 300px;
+      height: 200px;
+  }
+  
+  .formContent {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .custom-file-input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+  }
+  
+  .custom-file-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin: 0;
+      height: 30px;
+      font-size: 14px;
+      width: 150px;
+      background-color: #030303;
+      border-radius: 5px;
+      color: #fff;
+  }
+  
+  .custom-file-input {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      background-color: #030303;
+  }
+  
+  
+  .buttonSubmitForm {
+      position: absolute;
+      border: none;    
+      text-transform: uppercase;
+      background-color: #030303;
+      color: #fff;
+      width: 100%;
+      height: 40px;
+      border-radius: 0px 0px 8px 8px;
+      bottom: 0;
+      right: 0;
+  }
+  
+  .buttonSubmitForm:hover {
+      background-color: transparent;
+      border-top:  1px #030303 solid;
+      color: #030303;
+  }

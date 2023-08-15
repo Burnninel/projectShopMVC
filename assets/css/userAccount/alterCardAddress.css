@@ -1,0 +1,24 @@
+#chackboxAlterCardInfo {
+    display: flex;
+    flex-direction: row;
+    border: 1px #cfcbcb solid;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkboxOn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    background-color: #000000;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.checkboxOff {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+}

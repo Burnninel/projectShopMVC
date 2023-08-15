@@ -1,0 +1,76 @@
+#formCard {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 22px 12px 0px 6px;
+}
+
+.multipleInputRowForm { width: 100%; }
+
+#inputNumberCard { 
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.listValidityCard {
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.listValidityCard::-webkit-scrollbar {
+    background-color: #fff;
+    width: 4px;
+}
+  
+.listValidityCard::-webkit-scrollbar-thumb {
+    background-color: #262323;
+    border-radius: 5px;
+}
+
+#monthValidityCard { width: 30%; margin-right: 5%; }
+
+#monthValidityCard .dropdown-menu { min-width: 70px; }
+
+#yearValidityCard { width: 40%; }
+
+#yearValidityCard .dropdown-menu { min-width: 86px; }
+
+#cvvElement { width: 30%; margin-left: 5%; }
+
+#elementCpf { width: 47%; margin-right: 6%; }
+
+#elementNick { width: 47%; }
+
+.itemDropdown {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #787777;
+    height: 24px;
+    font-size: 12px;
+}
+
+.itemDropdown:hover { background-color: #e7e2e269; }
+
+.textItemDropdown { width: 100%; color: #787777; }
+
+#addCard { width: 100%; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.flagCard {
+    position: absolute;
+    right: 6px;
+    bottom: 14px;
+    height: 17px;
+    width: 30px;
+}

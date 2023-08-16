@@ -54,7 +54,7 @@
     flex-direction: row;
 }
 
-#svgStreet {
+#streetComponent {
     width: 65%;
     margin-right: 5%;
 }
@@ -63,15 +63,15 @@
     width: 100%;
 }
 
-#svgNumber {
+#numberComponent {
     width: 30%;
 }
 
-#svgCity {
+#cityComponent {
     width: 65% ;
     margin-right: 5%;
 }
 
-#svgUf {
+#ufComponent {
     width: 30%;
 }

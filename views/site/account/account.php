@@ -94,6 +94,8 @@
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/card/cardInfo.js"></script>
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/card/regex.js"></script>
     
+    <script src="<?php echo $url; ?>/assets/js/site/statusForms.js"></script>
+    
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/lenghtInputNumber.js"></script>
 
 </body>

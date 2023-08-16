@@ -15,7 +15,7 @@ function elementSearchCep(svg, type, name, id, placeholder, maxlength) {
     $('#formAddress').append(elementSearchCep);
 };
 
-elementSearchCep('svgCep', 'text', 'cep', 'cep', 'Digite seu CEP', '9');
+elementSearchCep('cepComponent', 'text', 'cep', 'cep', 'Digite seu CEP', '9');
 
 function elementsDoubleInputRow(element) {
     const elementDoubleInputRow = `<div class="inputsAddress" id="${element}"></div>`;
@@ -39,14 +39,14 @@ function btnAddAddress() {
 
 elementsDoubleInputRow('streetAndNumber');
 
-doubleInputRow('svgStreet', 'text', 'street', 'streetAddress', 'rua', 'streetAndNumber');
-doubleInputRow('svgNumber', 'text', 'number', 'numberAddress', 'numero', 'streetAndNumber');
+doubleInputRow('streetComponent', 'text', 'street', 'street', 'rua', 'streetAndNumber');
+doubleInputRow('numberComponent', 'text', 'number', 'number', 'numero', 'streetAndNumber');
 
-singleInputRow('svgNeighborhood', 'text', 'neighborhood', 'villageAddress', 'bairro', '24');
+singleInputRow('neighborhoodComponent', 'text', 'neighborhood', 'neighborhood', 'bairro', '24');
 
 elementsDoubleInputRow('cityAndUf');
 
-doubleInputRow('svgCity', 'text', 'city', 'cityAddress', 'cidade', 'cityAndUf');
-doubleInputRow('svgUf', 'text', 'uf', 'ufAddress', 'uf', 'cityAndUf');
+doubleInputRow('cityComponent', 'text', 'city', 'city', 'cidade', 'cityAndUf');
+doubleInputRow('ufComponent', 'text', 'uf', 'uf', 'uf', 'cityAndUf');
 
 btnAddAddress();

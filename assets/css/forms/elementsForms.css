@@ -31,12 +31,12 @@
 }
 
 .inputFormStatusError {
-    color: #ec2626;
+    color: #ec2626 !important;
     border-bottom: 1px #ec2626 solid;
 }
 
 .inputFormStatusError::placeholder {
-    color: #ec2626;
+    color: #ec2626 !important;
 }
 
 .inputSucess {

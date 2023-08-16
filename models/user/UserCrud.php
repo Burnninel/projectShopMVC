@@ -26,4 +26,24 @@ class UserCrud {
         return $result ? true : false;
     }
 
+    public function addAddress($cep, $street, $number, $neighborhood, $city, $uf, $usuario_id) {
+    
+        $pdo = array(
+            ':cep'          => $cep,
+            ':street'       => $street,
+            ':number'       => $number,
+            ':neighborhood' => $neighborhood,
+            ':city'         => $city,
+            ':uf'           => $uf,
+            ':usuario_id'   => $usuario_id
+        );
+
+        $columns = 'cep, street, number, neighborhood, city, uf, usuario_id';
+        $values = ':cep, :street, :number, :neighborhood, :city, :uf, :usuario_id';
+
+        $result = $this->pdoCrud->insert('address', $columns, $values, $pdo);
+
+        return $result ? true : false;
+    }
+
 }

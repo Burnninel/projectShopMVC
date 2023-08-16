@@ -52,6 +52,7 @@
   box-sizing: border-box;
   animation: floating 1s ease-out infinite alternate;
 }
+
 .loader::after {
   content: '';
   width: 100%;

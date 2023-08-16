@@ -33,7 +33,7 @@ function singleInputRow(svg, type, name, id, placeholder, maxlength) {
 };
 
 function btnAddAddress() {
-    const btnAddAddress = `<div class="inputsAddress"> <button id="btnSubmitAddress" class="btnFormAccount" type="submit">adicionar endereço</button> </div>`;
+    const btnAddAddress = `<div class="inputsAddress"> <button id="btnSubmitAddress" class="btnFormAccount" type="button">adicionar endereço</button> </div>`;
     $('#formAddress').append(btnAddAddress);
 };
 

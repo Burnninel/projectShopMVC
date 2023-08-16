@@ -21,6 +21,7 @@ $commonPost = array(
 	'submit' => 'SignUpController/signUp',
 	'login' => 'SignInController/signIn',
 	'user' => 'AccountController/user',
+	'address' => 'AccountController/address',
 );
 
 $commonRoutes = array_merge($commonRoutes, $commonPost);

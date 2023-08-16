@@ -44,9 +44,9 @@
 
                     <div id="headerAlterAddressCard"></div>
 
-                    <form action="../php/addAddress.php" method="post" id="formAddress"></form>
+                    <form method="post" id="formAddress"></form>
 
-                    <form action="../php/addCard.php" method="post" id="formCard"></form>
+                    <form method="post" id="formCard"></form>
 
                 </div>
             </div>
@@ -82,9 +82,10 @@
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/account.js"></script>
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/headerProfile.js"></script>
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/alterCardAddress.js"></script>
-
+    
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/address/bodyFormAddress.js"></script>
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/address/cep.js"></script>
+    <script src="<?php echo $url; ?>/assets/js/site/userAccount/address/validateAddress.js"></script>
 
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/card/bodyFormCard.js"></script>
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/card/card.js"></script>

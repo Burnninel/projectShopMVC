@@ -13,12 +13,12 @@ function validateInput(id, tooltip) {
 
 function validateForm() {
     var name = $('#name');
-    var lastName = $('#lastname');
+    var lastname = $('#lastname');
     var password = $('#password');
 
-    credentialsValid = validateInput(name, 'Digite um nome válido') ||
-                       validateInput(lastName, 'Digite um sobrenome válido') ||
-                       validateInput(password, 'Digite uma senha válida');
+    credentialsValid = validateInput(name, 'Digite um nome válido');
+    credentialsValid = validateInput(lastname, 'Digite um sobrenome válido');
+    credentialsValid = validateInput(password, 'Digite uma senha válida');
 };
 
 function validateEmail() {

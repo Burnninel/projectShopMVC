@@ -19,13 +19,14 @@ function valuesForm() {
     var city = $('#city');
     var uf = $('#uf');
     
-    addressValid =  validateInput(cep, 'Digite um cep válido') ||
-                    validateInput(street, 'Rua inválida') ||
-                    validateInput(numberAddress, 'Numero inválido') ||
-                    validateInput(neighborhood, 'Bairro inválido') ||
-                    validateInput(city, 'Cidade inválida') ||
-                    validateInput(uf, 'Uf inválida');
-};
+    addressValid = validateInput(cep, 'Digite um cep válido');
+    addressValid = validateInput(street, 'Rua inválida');
+    addressValid = validateInput(numberAddress, 'Numero inválido');
+    addressValid = validateInput(neighborhood, 'Bairro inválido'); 
+    addressValid = validateInput(city, 'Cidade inválida');
+    addressValid = validateInput(uf, 'Uf inválida');
+
+}
 
 function handleSubmit() {
     const form = $('#formAddress');
@@ -63,5 +64,7 @@ function keyupAddres() {
 $('#btnSubmitAddress').click(function(event) {
     valuesForm();
     handleSubmit();
+    addErrorForm('titleHeaderAddressCard', 'profileBody', 'btnSubmitAddress');
+    svgError();
     keyupAddres();
 });

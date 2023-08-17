@@ -18,9 +18,9 @@ function errorSvg(element, tooltip) {
 
 function removeErrorForm(title, form, btn) {
     $('input').on('keyup', function() {
-        var lastInput = $('input:last');
+        var inputs = $('input');
     
-        if (!lastInput.hasClass('inputFormStatusError')) {
+        if (!inputs.hasClass('inputFormStatusError')) {
             $('#' + title).css('color', '#fff');
             $('#' + form).css('border-color', '#fff');
             $('#' + btn).css('border-color', '#fff');
@@ -47,5 +47,17 @@ function addErrorForm(title, form, btn) {
         $('#' + form).css('border-color', '#fff');
         $('#' + btn).css('border-color', '#fff');
         $('#' + btn).css('color', '#fff');
+    }
+}
+
+function svgError() {
+    var input = $('input').hasClass('inputFormStatusError')
+
+    if(input) {
+        $('#map').css('color', '#ec2626');
+        $('#chackboxAlterCardInfo').css('border-color', '#ec2626')
+    } else {
+        $('#map').css('color', '#fff');
+        $('#chackboxAlterCardInfo').css('border-color', '#fff')
     }
 }

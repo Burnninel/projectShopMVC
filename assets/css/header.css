@@ -4,15 +4,9 @@
 
 * {
   font-family: 'Inconsolata', monospace;
-  
 }
 
-body {
-  height: 100vh;
-  background-image: linear-gradient(
-        15deg, #000, #07173d
-  );
-}
+
 
 #header {
   position: fixed;

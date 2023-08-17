@@ -1,0 +1,8 @@
+body {
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(
+        15deg, #000, #07173d
+    );
+}

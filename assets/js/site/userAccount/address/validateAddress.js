@@ -30,7 +30,7 @@ function valuesForm() {
 function handleSubmit() {
     const form = $('#formAddress');
 
-    if(!addressValid) {
+    if(addressValid) {
 
         $.ajax({
             url: 'http://localhost/shopMVC/address',

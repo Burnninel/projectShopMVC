@@ -1,0 +1,40 @@
+#templateSuccess {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px #22ff00 solid;
+    background-color: #2bff0010;
+    border-radius: 12px;
+    height: 227px;
+    width: 100%;
+    padding: 15px;
+}
+
+.loadingFormAccount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.spinner-border {
+    height: 60px;
+    width: 60px;
+    color: #fff;
+}
+
+#svgSuccess {
+    height: 100px;
+    width: 100px;
+    color: #22ff00;
+}
+
+#textSuccess {
+    text-transform: uppercase;
+    text-align: center;
+    color: #22ff00;
+    font-size: 16px;
+    font-weight: 700;
+}

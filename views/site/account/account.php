@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/address.css">
     <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/bodyFormAddress.css">
     <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/card.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/loading.css">
 
     <title>Entre ou Cadastre-se</title>
 

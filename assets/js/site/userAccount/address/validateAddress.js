@@ -65,6 +65,8 @@ $('#btnSubmitAddress').click(function(event) {
     valuesForm();
     handleSubmit();
     addErrorForm('titleHeaderAddressCard', 'profileBody', 'btnSubmitAddress');
-    svgError();
+    removeErrorForm('titleHeaderAddressCard', 'profileBody', 'btnSubmitAddress');
+    addErrorFormAccount();
+    removeErrorFormAccount();
     keyupAddres();
 });

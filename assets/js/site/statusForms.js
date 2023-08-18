@@ -9,7 +9,7 @@ function errorSvg(element, tooltip) {
         $('#' + element).append(error);
     }
 
-    $('#' + element + ' .svgError').hover(function() {
+    $('#' + element + ' .svgError').hover(function () {
         $('#' + element + ' .svgError').tooltip('show');
     })
 
@@ -17,9 +17,9 @@ function errorSvg(element, tooltip) {
 };
 
 function removeErrorForm(title, form, btn) {
-    $('input').on('keyup', function() {
+    $('input').on('keyup', function () {
         var inputs = $('input');
-    
+
         if (!inputs.hasClass('inputFormStatusError')) {
             $('#' + title).css('color', '#fff');
             $('#' + form).css('border-color', '#fff');
@@ -37,7 +37,7 @@ function removeErrorForm(title, form, btn) {
 function addErrorForm(title, form, btn) {
     var input = $('input').hasClass('inputFormStatusError')
 
-    if(input) {
+    if (input) {
         $('#' + title).css('color', '#ec2626');
         $('#' + form).css('border-color', '#ec2626');
         $('#' + btn).css('border-color', '#ec2626');
@@ -50,14 +50,36 @@ function addErrorForm(title, form, btn) {
     }
 }
 
-function svgError() {
-    var input = $('input').hasClass('inputFormStatusError')
+function addErrorFormAccount() {
+    var input = $('input').hasClass('inputFormStatusError');
 
-    if(input) {
+    if (input) {
         $('#map').css('color', '#ec2626');
-        $('#chackboxAlterCardInfo').css('border-color', '#ec2626')
+        $('#chackboxAlterCardInfo').css('border-color', '#ec2626');
+        $('#btnSearchCEP').css('border-color', '#ec2626');
+        $('#svgSearchBtn').css('color', '#ec2626');
     } else {
         $('#map').css('color', '#fff');
-        $('#chackboxAlterCardInfo').css('border-color', '#fff')
+        $('#chackboxAlterCardInfo').css('border-color', '#fff');
+        $('#btnSearchCEP').css('border-color', '#fff');
+        $('#svgSearchBtn').css('color', '#fff');
     }
+}
+
+function removeErrorFormAccount() {
+    $('input').on('keyup', function () {
+        var inputs = $('input');
+
+        if (!inputs.hasClass('inputFormStatusError')) {
+            $('#map').css('color', '#fff');
+            $('#chackboxAlterCardInfo').css('border-color', '#fff');
+            $('#btnSearchCEP').css('border-color', '#fff');
+            $('#svgSearchBtn').css('color', '#fff');
+        } else {
+            $('#map').css('color', '#ec2626');
+            $('#chackboxAlterCardInfo').css('border-color', '#ec2626');
+            $('#btnSearchCEP').css('border-color', '#ec2626');
+            $('#svgSearchBtn').css('color', '#ec2626');
+        }
+    });
 }

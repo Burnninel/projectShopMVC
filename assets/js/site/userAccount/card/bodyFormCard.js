@@ -30,7 +30,7 @@ function cardInfo() {
 cardInfo();
 
 function btnAddCard() {
-    const btnAddCard = `<div class="inputsAddress"> <button id="btnAddCard" class="btnFormAccount" type="submit">adicionar cartão</button> </div>`;
+    const btnAddCard = `<div class="inputsAddress"> <button id="btnAddCard" class="btnFormAccount" type="button">adicionar cartão</button> </div>`;
     $('#formCard').append(btnAddCard);
 };
 

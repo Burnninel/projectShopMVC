@@ -46,4 +46,25 @@ class UserCrud {
         return $result ? true : false;
     }
 
+    public function addCard($numberCard, $month, $year, $cvv, $name, $cpf, $nick, $usuario_id) {
+    
+        $pdo = array(
+            ':numberCard'          => $numberCard,
+            ':month'       => $month,
+            ':year'       => $year,
+            ':cvv' => $cvv,
+            ':name'         => $name,
+            ':cpf'           => $cpf,
+            ':nick'           => $nick,
+            ':usuario_id'   => $usuario_id
+        );
+
+        $columns = 'numberCard, month, year, cvv, name, cpf, nick, usuario_id';
+        $values = ':numberCard, :month, :year, :cvv, :name, :cpf, :nick, :usuario_id';
+
+        $result = $this->pdoCrud->insert('card', $columns, $values, $pdo);
+
+        return $result ? true : false;
+    }
+
 }

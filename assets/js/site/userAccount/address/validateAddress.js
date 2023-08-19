@@ -28,7 +28,7 @@ function valuesForm() {
 
 }
 
-function handleSubmit() {
+function handleSubmitAddress() {
     const form = $('#formAddress');
 
     if(addressValid) {
@@ -89,10 +89,12 @@ function keyupAddres() {
 
 $('#btnSubmitAddress').click(function(event) {
     valuesForm();
-    handleSubmit();
+    handleSubmitAddress();
     addErrorForm('titleHeaderAddressCard', 'profileBody', 'btnSubmitAddress');
     removeErrorForm('titleHeaderAddressCard', 'profileBody', 'btnSubmitAddress');
     addErrorFormAccount();
     removeErrorFormAccount();
     keyupAddres();
+    console.log('address');
+
 });

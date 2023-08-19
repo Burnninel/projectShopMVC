@@ -12,8 +12,6 @@ function errorSvg(element, tooltip) {
     $('#' + element + ' .svgError').hover(function () {
         $('#' + element + ' .svgError').tooltip('show');
     })
-
-    console.log(element)
 };
 
 function removeErrorForm(title, form, btn) {

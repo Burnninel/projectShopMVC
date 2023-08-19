@@ -28,7 +28,7 @@
 
 // }
 
-function handleSubmit() {
+function handleSubmitCard() {
     const form = $('#formCard');
 
     $.ajax({
@@ -44,5 +44,5 @@ function handleSubmit() {
 };
 
 $('#btnAddCard').click(function() {
-    handleSubmit();
+    handleSubmitCard();
 });

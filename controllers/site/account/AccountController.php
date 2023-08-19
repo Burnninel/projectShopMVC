@@ -93,9 +93,6 @@ class AccountController extends Controller
 			$credentialsValid = true;
 		}
 
-		var_dump($credentialsValid);
-
-
 		if (!$credentialsValid) {
 			echo json_encode(array(
 				'result' => false

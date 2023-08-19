@@ -45,7 +45,7 @@ function handleSubmitCard() {
 
 };
 
-function keyupAddres() {
+function keyupCard() {
     $('#numberCard, #month, #year, #cvv, #nameCard, #cpf, #nick').on('keyup', function() {
         var inputIdSelected = $(this).attr('id');
         var idParent = $(this).parent().attr('id');
@@ -63,6 +63,6 @@ function keyupAddres() {
 $('#btnAddCard').click(function() {
     handleSubmitCard();
     valuesFormCard();
-    keyupAddres();
-    
+    keyupCard();
+
 });

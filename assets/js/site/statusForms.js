@@ -52,15 +52,15 @@ function addErrorFormAccount(idSvg, chechbox, search, btn) {
     var input = $('input').hasClass('inputFormStatusError');
 
     if (input) {
-        $('#map').css('color', '#ec2626');
-        $('#chackboxAlterCardInfo').css('border-color', '#ec2626');
-        $('#btnSearchCEP').css('border-color', '#ec2626');
-        $('#svgSearchBtn').css('color', '#ec2626');
+        $('#' + idSvg).css('color', '#ec2626');
+        $('#' + chechbox).css('border-color', '#ec2626');
+        $('#' + search).css('border-color', '#ec2626');
+        $('#' + btn).css('color', '#ec2626');
     } else {
-        $('#map').css('color', '#fff');
-        $('#chackboxAlterCardInfo').css('border-color', '#fff');
-        $('#btnSearchCEP').css('border-color', '#fff');
-        $('#svgSearchBtn').css('color', '#fff');
+        $('#' + idSvg).css('color', '#fff');
+        $('#' + chechbox).css('border-color', '#fff');
+        $('#' + search).css('border-color', '#fff');
+        $('#' + btn).css('color', '#fff');
     }
 }
 

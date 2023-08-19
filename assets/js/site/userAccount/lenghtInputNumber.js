@@ -10,7 +10,7 @@ function lenghtInputCard(input, length) {
 };
 
 $(document).ready(function() {
-    lenghtInputCard('cvvCard', 3);
-    lenghtInputCard('btnMonth', 2);
-    lenghtInputCard('btnYear', 4);
+    lenghtInputCard('cvv', 3);
+    lenghtInputCard('month', 2);
+    lenghtInputCard('year', 4);
 });

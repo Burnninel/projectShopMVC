@@ -7,7 +7,7 @@ $(document).ready(function() {
       return cpf;
     };
 
-    $("#cpfCard").on('input', function() {
+    $("#cpf").on('input', function() {
       var cpf = $(this).val();
       var formattedCPF = formatCPF(cpf);
       $(this).val(formattedCPF);

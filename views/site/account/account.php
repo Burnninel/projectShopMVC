@@ -95,6 +95,7 @@
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/card/security.js"></script>
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/card/cardInfo.js"></script>
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/card/regex.js"></script>
+    <script src="<?php echo $url; ?>/assets/js/site/userAccount/card/validateCard.js"></script>
     
     <script src="<?php echo $url; ?>/assets/js/site/statusForms.js"></script>
     

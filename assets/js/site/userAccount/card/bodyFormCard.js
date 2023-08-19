@@ -3,7 +3,7 @@ function inputNumberCard(idElement) {
     $('#formCard').append(inputNumberCard);
 };
 
-inputNumberCard('numberElement');
+inputNumberCard('numberCardElement');
 
 function inputSecurity() {
     const multipleInputRowForm = `<div class="multipleInputRowForm inputStyling" id="cardSecurity"></div>`;
@@ -20,7 +20,7 @@ function nameCard(idElement) {
     $('#formCard').append(nameCard);
 };
 
-nameCard('nameElement');
+nameCard('nameCardElement');
 
 function cardInfo() {
     const cardInfo = `<div class="multipleInputRowForm" id="cardInfo"></div>`;

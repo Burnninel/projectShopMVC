@@ -1,32 +1,34 @@
-// var addressValid = true;
+var cardValid = true;
 
-// function validateInput(id, tooltip) {
-//     if(!id.val()) {
+function validateInputCard(id, tooltip) {
+    if(!id.val()) {
        
-//         errorSvg(id.attr('id') + 'Component', tooltip);
-//         $('#' + id.attr('id')).addClass('inputFormStatusError');
-//         return false;
-//     };
+        errorSvg(id.attr('id') + 'Element', tooltip);
+        $('#' + id.attr('id')).addClass('inputFormStatusError');
+        return false;
+    };
     
-//     return true;
-// };
+    return true;
+};
 
-// function valuesForm() {
-//     var cep = $('#cep');
-//     var street = $('#street');
-//     var numberAddress = $('#number');
-//     var neighborhood = $('#neighborhood');
-//     var city = $('#city');
-//     var uf = $('#uf');
+function valuesFormCard() {
+    var numberCard = $('#numberCard');
+    var month = $('#month');
+    var year = $('#year');
+    var cvv = $('#cvv');
+    var nameCard = $('#nameCard');
+    var cpf = $('#cpf');
+    var nick = $('#nick');
     
-//     addressValid = validateInput(cep, 'Digite um cep válido');
-//     addressValid = validateInput(street, 'Rua inválida');
-//     addressValid = validateInput(numberAddress, 'Numero inválido');
-//     addressValid = validateInput(neighborhood, 'Bairro inválido'); 
-//     addressValid = validateInput(city, 'Cidade inválida');
-//     addressValid = validateInput(uf, 'Uf inválida');
+    cardValid = validateInputCard(numberCard, 'Número inválido');
+    cardValid = validateInputCard(month, 'Mês inválido');
+    cardValid = validateInputCard(year, 'Ano inválido');
+    cardValid = validateInputCard(cvv, 'CVV inválido'); 
+    cardValid = validateInputCard(nameCard, 'Nome inválido');
+    cardValid = validateInputCard(cpf, 'CPF inválido');
+    cardValid = validateInputCard(nick, 'Apelido inválido');
 
-// }
+}
 
 function handleSubmitCard() {
     const form = $('#formCard');
@@ -43,6 +45,24 @@ function handleSubmitCard() {
 
 };
 
+function keyupAddres() {
+    $('#numberCard, #month, #year, #cvv, #nameCard, #cpf, #nick').on('keyup', function() {
+        var inputIdSelected = $(this).attr('id');
+        var idParent = $(this).parent().attr('id');
+    
+        if ($(this).val().trim() !== '') {
+            $('#' + idParent + ' .svgError').hide();
+            $(`#${inputIdSelected}`).removeClass('inputFormStatusError');
+        } else {
+            $('#' + idParent + ' .svgError').show();
+            $(`#${inputIdSelected}`).addClass('inputFormStatusError');
+        };
+    });
+}
+
 $('#btnAddCard').click(function() {
     handleSubmitCard();
+    valuesFormCard();
+    keyupAddres();
+    
 });

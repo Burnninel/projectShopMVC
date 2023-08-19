@@ -8,5 +8,5 @@ function infoCard(elementId, type, name, maxlength, inputId, placeholder) {
     $('#cardInfo').append(infoCard);
 };
 
-infoCard('elementCpf', 'text', 'cpf', '14', 'cpf', 'cpf');
-infoCard('elementNick', 'text', 'nick', '16', 'nick', 'apelido');
+infoCard('cpfElement', 'text', 'cpf', '14', 'cpf', 'cpf');
+infoCard('nickElement', 'text', 'nick', '16', 'nick', 'apelido');

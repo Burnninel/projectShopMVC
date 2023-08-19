@@ -43,9 +43,9 @@
 
 #cvvElement { width: 30%; margin-left: 5%; }
 
-#elementCpf { width: 47%; margin-right: 6%; }
+#cpfElement { width: 47%; margin-right: 6%; }
 
-#elementNick { width: 47%; }
+#nickElement { width: 47%; }
 
 .itemDropdown {
     display: flex;

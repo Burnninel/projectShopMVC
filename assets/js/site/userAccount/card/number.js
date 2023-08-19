@@ -4,7 +4,7 @@ function numberCard() {
                         <input type="text" name="numberCard" class="inputBodyInfo" id="numberCard" placeholder="número do cartão" maxlength="19">
                     `;
 
-    $('#numberElement').append(numberCard);
+    $('#numberCardElement').append(numberCard);
 };
 
 numberCard();
@@ -18,7 +18,7 @@ function flagCard(decimal, idSvg, svg, code1, code2) {
         if(inputTwoDigits == code1 || inputTwoDigits == code2) {
             if (!$(`#${idSvg}`).length) {
                 var svgCard = svg;
-                $('#numberElement').append(svgCard);
+                $('#numberCardElement').append(svgCard);
               };
         } else {
             $(`#${idSvg}`).remove();

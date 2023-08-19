@@ -48,7 +48,7 @@ function addErrorForm(title, form, btn) {
     }
 }
 
-function addErrorFormAccount() {
+function addErrorFormAccount(idSvg, chechbox, search, btn) {
     var input = $('input').hasClass('inputFormStatusError');
 
     if (input) {

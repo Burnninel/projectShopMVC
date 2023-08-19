@@ -63,6 +63,9 @@ function keyupCard() {
 $('#btnAddCard').click(function() {
     handleSubmitCard();
     valuesFormCard();
+    addErrorForm('titleHeaderAddressCard', 'profileBody', 'btnAddCard');
+    removeErrorForm('titleHeaderAddressCard', 'profileBody', 'btnAddCard');
+    addErrorFormAccount('card', 'chackboxAlterCardInfo', 'btnSearchCEP', 'svgSearchBtn');
+    removeErrorFormAccount('card', 'chackboxAlterCardInfo', 'btnSearchCEP', 'svgSearchBtn');
     keyupCard();
-
 });

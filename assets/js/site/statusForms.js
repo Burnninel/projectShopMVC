@@ -64,20 +64,20 @@ function addErrorFormAccount(idSvg, chechbox, search, btn) {
     }
 }
 
-function removeErrorFormAccount() {
+function removeErrorFormAccount(idSvg, chechbox, search, btn) {
     $('input').on('keyup', function () {
         var inputs = $('input');
 
         if (!inputs.hasClass('inputFormStatusError')) {
-            $('#map').css('color', '#fff');
-            $('#chackboxAlterCardInfo').css('border-color', '#fff');
-            $('#btnSearchCEP').css('border-color', '#fff');
-            $('#svgSearchBtn').css('color', '#fff');
+            $('#' + idSvg).css('color', '#fff');
+            $('#' + chechbox).css('border-color', '#fff');
+            $('#' + search).css('border-color', '#fff');
+            $('#' + btn).css('color', '#fff');
         } else {
-            $('#map').css('color', '#ec2626');
-            $('#chackboxAlterCardInfo').css('border-color', '#ec2626');
-            $('#btnSearchCEP').css('border-color', '#ec2626');
-            $('#svgSearchBtn').css('color', '#ec2626');
+            $('#' + idSvg).css('color', '#ec2626');
+            $('#' + chechbox).css('border-color', '#ec2626');
+            $('#' + search).css('border-color', '#ec2626');
+            $('#' + btn).css('color', '#ec2626');
         }
     });
 }

@@ -59,7 +59,10 @@
         <div class="modal-dialog modal-dialog-centered" id="modalDialogForm">
             <div class="modal-content" id="modalUploadPhoto">
                 <form id="formImgProfile" class="formContent" method="post" enctype="multipart/form-data">
-                    <input id="upImgProfile" type="file" name="arquivo">
+                    <div id="elementsFormImgProfile">
+                        <input id="upImgProfile" type="file" name="arquivo">
+                        <label id="labelUploadImgProfile" for="upImgProfile">Escolha um arquivo</label>
+                    </div>
                     <button class="buttonSubmitForm" id="btnImgProfile" type="button">Enviar</button>
                 </form>
             </div>

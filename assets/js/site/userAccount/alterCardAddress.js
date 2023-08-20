@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#btnAlterLeft').addClass('itemActive');
 
-    $('#chackboxAlterCardInfo').click(function() {
+    $('#checkboxAlterAddressCard').click(function() {
        
         if ($('#btnAlterRight').hasClass('itemActive')) {
             $('#btnAlterRight').removeClass('itemActive');

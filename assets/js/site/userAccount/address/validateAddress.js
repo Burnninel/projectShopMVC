@@ -92,7 +92,7 @@ $('#btnSubmitAddress').click(function(event) {
     handleSubmitAddress();
     addErrorForm('titleHeaderAddressCard', 'profileBody', 'btnSubmitAddress');
     removeErrorForm('titleHeaderAddressCard', 'profileBody', 'btnSubmitAddress');
-    addErrorFormAccount('map', 'chackboxAlterCardInfo', 'btnSearchCEP', 'svgSearchBtn');
-    removeErrorFormAccount('map', 'chackboxAlterCardInfo', 'btnSearchCEP', 'svgSearchBtn');
+    addErrorFormAccount('map', 'checkboxAlterAddressCard', 'btnSearchCEP', 'svgSearchBtn');
+    removeErrorFormAccount('map', 'checkboxAlterAddressCard', 'btnSearchCEP', 'svgSearchBtn');
     keyupAddres();
 });

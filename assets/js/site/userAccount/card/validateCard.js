@@ -91,7 +91,7 @@ $('#btnAddCard').click(function() {
     valuesFormCard();
     addErrorForm('titleHeaderAddressCard', 'profileBody', 'btnAddCard');
     removeErrorForm('titleHeaderAddressCard', 'profileBody', 'btnAddCard');
-    addErrorFormAccount('card', 'chackboxAlterCardInfo', 'btnSearchCEP', 'svgSearchBtn');
-    removeErrorFormAccount('card', 'chackboxAlterCardInfo', 'btnSearchCEP', 'svgSearchBtn');
+    addErrorFormAccount('card', 'checkboxAlterAddressCard', 'btnSearchCEP', 'svgSearchBtn');
+    removeErrorFormAccount('card', 'checkboxAlterAddressCard', 'btnSearchCEP', 'svgSearchBtn');
     keyupCard();
 });

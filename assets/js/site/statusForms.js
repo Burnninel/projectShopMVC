@@ -7,11 +7,11 @@ function errorSvg(element, tooltip) {
 
     if ($('#' + element + ' .svgError').length === 0) {
         $('#' + element).append(error);
-    }
+    };
 
     $('#' + element + ' .svgError').hover(function () {
         $('#' + element + ' .svgError').tooltip('show');
-    })
+    });
 };
 
 function removeErrorForm(title, form, btn) {
@@ -28,9 +28,9 @@ function removeErrorForm(title, form, btn) {
             $('#' + form).css('border-color', '#ec2626');
             $('#' + btn).css('border-color', '#ec2626');
             $('#' + btn).css('color', '#ec2626');
-        }
+        };
     });
-}
+};
 
 function addErrorForm(title, form, btn) {
     var input = $('input').hasClass('inputFormStatusError')
@@ -61,8 +61,8 @@ function addErrorFormAccount(idSvg, chechbox, search, btn) {
         $('#' + chechbox).css('border-color', '#fff');
         $('#' + search).css('border-color', '#fff');
         $('#' + btn).css('color', '#fff');
-    }
-}
+    };
+};
 
 function removeErrorFormAccount(idSvg, chechbox, search, btn) {
     $('input').on('keyup', function () {
@@ -78,6 +78,24 @@ function removeErrorFormAccount(idSvg, chechbox, search, btn) {
             $('#' + chechbox).css('border-color', '#ec2626');
             $('#' + search).css('border-color', '#ec2626');
             $('#' + btn).css('color', '#ec2626');
-        }
+        };
     });
-}
+};
+
+function removeErrorAlterCheckbox() {
+
+    $('svg').css('color', '#fff');
+    $('#titleHeaderAddressCard').css('color', '#fff');
+    $('#checkboxAlterAddressCard').css('border-color', '#fff');
+    $('#profileBody').css('border-color', '#fff');
+    $('#btnSearchCEP').css('border-color', '#fff');
+    $('.btnFormAccount').css('border-color', '#fff');
+    $('.btnFormAccount').css('color', '#fff');
+    $('input').removeClass('inputFormStatusError');
+    $('input').removeClass('svgError');
+
+};
+
+$('#checkboxAlterAddressCard').click(function() {
+    removeErrorAlterCheckbox();
+});

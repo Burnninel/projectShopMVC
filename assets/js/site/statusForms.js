@@ -92,8 +92,8 @@ function removeErrorAlterCheckbox() {
     $('.btnFormAccount').css('border-color', '#fff');
     $('.btnFormAccount').css('color', '#fff');
     $('input').removeClass('inputFormStatusError');
-    $('input').removeClass('svgError');
-
+    $('.svgError').remove();
+    
 };
 
 $('#checkboxAlterAddressCard').click(function() {

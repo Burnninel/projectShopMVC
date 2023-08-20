@@ -14,11 +14,59 @@ class AccountController extends Controller
 	{
 
 		$this->view('site/account/account.php');
+		
+	}
+
+	public function imgProfile()
+	{
+		
+		if(isset($_FILES['arquivo'])) {
+			
+			$status = true;
+
+			$nameFile = $_FILES['arquivo']['name'];
+
+			if($_FILES['arquivo']['size'] > 5000000) {
+				echo 'A imagem é muito grande';
+				$status = false;
+			}
+		
+			$format = strtolower(pathinfo($_FILES['arquivo']['name'], PATHINFO_EXTENSION));
+		
+			if($format != 'png' && $format != 'jpg' && $format != 'jpeg') {
+				echo 'Formato não permitidido';
+				$status = false;
+			}
+		
+			$directory = 'assets/img/uploads/' . $nameFile;
+
+			if($status) {
+				move_uploaded_file($_FILES['arquivo']['tmp_name'], $directory);
+				
+				$getID = new UserSession;
+				$usuario_id = $getID->get('id');
+
+				$addImgProfile = new UserCrud;
+				$addImgProfile->addImgProfile($nameFile, $usuario_id);
+
+				echo json_encode(array(
+					'result' => true
+				));
+			} else {
+				echo json_encode(array(
+					'result' => false
+				));
+	
+				return false;
+			}
+		} else {
+			echo 'Não foi possivel ler o arquivo';
+		}
+
 	}
 
 	public function user()
 	{
-
 		$getID = new UserSession;
 		$userID = $getID->get('id');
 

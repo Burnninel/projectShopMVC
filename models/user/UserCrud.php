@@ -26,6 +26,21 @@ class UserCrud {
         return $result ? true : false;
     }
 
+    public function addImgProfile($imgProfile, $usuario_id) {
+    
+        $pdo = array(
+            ':imgProfile' => $imgProfile,
+            ':usuario_id' => $usuario_id
+        );
+    
+        $values = 'imgProfile = :imgProfile';
+        $clausule = 'WHERE id = :usuario_id';
+    
+        $result = $this->pdoCrud->update('usuario', $values, $clausule, $pdo);
+    
+        return $result ? true : false;
+    }
+
     public function addAddress($cep, $street, $number, $neighborhood, $city, $uf, $usuario_id) {
     
         $pdo = array(

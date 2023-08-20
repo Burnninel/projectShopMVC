@@ -58,17 +58,13 @@
     <div class="modal fade" id="modalForm" aria-labelledby="modalForm" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" id="modalDialogForm">
             <div class="modal-content" id="modalUploadPhoto">
-                <form class="formContent" action="../php/uploadPhoto.php" method="POST" enctype="multipart/form-data">
-                    <div class="custom-file-input-wrapper">
-                        <input id="inputQlq" class="custom-file-input d-none" type="file" name="arquivo">
-                        <label class="custom-file-name" for="inputQlq">Escolha um arquivo</label>
-                    </div>
-                    <button class="buttonSubmitForm" type="submit">enviar</button>
+                <form id="formImgProfile" class="formContent" method="post" enctype="multipart/form-data">
+                    <input id="upImgProfile" type="file" name="arquivo">
+                    <button class="buttonSubmitForm" id="btnImgProfile" type="button">Enviar</button>
                 </form>
             </div>
         </div>
     </div>
-
 
     <script>
         var PATH = '<?php echo $url; ?>';
@@ -85,6 +81,7 @@
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/headerProfile.js"></script>
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/alterCardAddress.js"></script>
     
+    
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/address/bodyFormAddress.js"></script>
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/address/cep.js"></script>
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/address/validateAddress.js"></script>
@@ -100,6 +97,8 @@
     <script src="<?php echo $url; ?>/assets/js/site/statusForms.js"></script>
     
     <script src="<?php echo $url; ?>/assets/js/site/userAccount/lenghtInputNumber.js"></script>
+
+    <script src="<?php echo $url; ?>/assets/js/site/userAccount/imgProfile.js"></script>
 
 </body>
 

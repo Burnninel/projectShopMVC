@@ -10,7 +10,7 @@ function getInfosUser() {
             }
             $('#textDate').text(formatDate(data.dateCreate));
             if (data.imgProfile !== null) {
-                var img = `<img src="${PATH}/assets/img/${data.imgProfile}" alt="myProfilePic" class="myProfilePic">`;
+                var img = `<img src="${PATH}/assets/img/uploads/${data.imgProfile}" alt="myProfilePic" class="myProfilePic">`;
                 $('#myPhoto').html(img);
             };
         },

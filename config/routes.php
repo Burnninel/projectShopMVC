@@ -23,6 +23,7 @@ $commonPost = array(
 	'user' => 'AccountController/user',
 	'address' => 'AccountController/address',
 	'card' => 'AccountController/card',
+	'imgProfile' => 'AccountController/imgProfile',
 );
 
 $commonRoutes = array_merge($commonRoutes, $commonPost);

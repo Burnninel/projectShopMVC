@@ -34,7 +34,6 @@ class AccountController extends Controller
 			$format = strtolower(pathinfo($_FILES['arquivo']['name'], PATHINFO_EXTENSION));
 		
 			if($format != 'png' && $format != 'jpg' && $format != 'jpeg') {
-				echo 'Formato não permitidido';
 				$status = false;
 			}
 		

@@ -31,9 +31,9 @@ function handleSubmitImg() {
                     $('#modalUploadPhoto').html(` 
                         <div class="spinner-border" role="status">
                             <span class="visually-hidden">Loading...</span>
-                        </div>`
-                    )
-                })
+                        </div>
+                    `);
+                });
                 
                 setTimeout(function() {
                     $('#modalUploadPhoto').html(`
@@ -42,13 +42,17 @@ function handleSubmitImg() {
                         </svg>
                         <span id="successUploadImgProfile">Imagem de perfil atualizada!</span>
                     `);
-                    $('#modalUploadPhoto').css('border-color', '#22ff00')
-                    $('#modalUploadPhoto').css('background-color', '#2bff0007')
+
+                    $('#modalUploadPhoto').css('border-color', '#22ff00');
+                    $('#modalUploadPhoto').css('background-color', '#2bff0007');
                 }, 1200)
 
                 setTimeout(function() {
                     window.location.href = 'http://localhost/shopMVC/account';
                 }, 2300)
+            } else {
+                $('#modalUploadPhoto, #labelUploadImgProfile, #btnImgProfile').css('border-color', '#ec2626');
+                $('#labelUploadImgProfile, #btnImgProfile').css('color', '#ec2626');
             }
         }
     });

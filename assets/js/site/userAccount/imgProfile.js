@@ -63,3 +63,8 @@ $('#btnImgProfile').click(function () {
     handleSubmitImg();
 });
 
+
+$('#labelUploadImgProfile').click(function () {
+    $('#modalUploadPhoto, #labelUploadImgProfile, #btnImgProfile').css('border-color', '#fff');
+    $('#labelUploadImgProfile, #btnImgProfile').css('color', '#fff');
+});

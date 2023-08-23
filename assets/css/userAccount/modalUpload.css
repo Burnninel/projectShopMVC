@@ -1,8 +1,12 @@
+.modal {
+  backdrop-filter: blur(2.5px);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 #modalDialogForm {
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(1.5px);
 }
 
 #modalUploadPhoto {
@@ -96,4 +100,15 @@
   color: #22ff00;
   font-size: 14px;
   font-weight: 700;
+}
+
+#svgErrorModal {
+  height: 18px;
+  color: #ec2626;
+}
+
+#errorImgModal {
+  color: #ec2626;
+  text-transform: uppercase;
+  font-size: 12px;
 }

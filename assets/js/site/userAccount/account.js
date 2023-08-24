@@ -1,3 +1,5 @@
+itemDropdownHeader('signOut', 'Sair');
+
 function getInfosUser() {
 
     $.ajax({
@@ -38,3 +40,6 @@ function formatDate(data) {
 }
 
 getInfosUser();
+
+itemDropdown('signInDropdown', 'sair');
+itemDropdown('signUp', 'sair');

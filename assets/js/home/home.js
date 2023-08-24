@@ -1,6 +1,9 @@
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
+itemDropdownHeader('signInDropdown', 'Entrar');
+itemDropdownHeader('signUp', 'Cadastre-se');
+
 $('#signIn').click(function() {
 
     window.location.href = "../pages/signIn.html";

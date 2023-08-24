@@ -31,13 +31,10 @@ function dropdownBodyHeader() {
 
 dropdownBodyHeader();
 
-function itemDropdown(id, title) {
+function itemDropdownHeader(id, title) {
     var item = `<li><button class="item-dropdown" id="${id}">${title}</button></li>`;
     $('.dropdown-menu').append(item)
 }
-
-itemDropdown('signInDropdown', 'Entrar');
-itemDropdown('signUp', 'Cadastre-se');
 
 $(document).on('click', '#signInDropdown', function() {
 
@@ -56,3 +53,4 @@ $(document).on('click', '#logo', function() {
     window.location.href = 'http://localhost/shopMVC/';
     
 });
+

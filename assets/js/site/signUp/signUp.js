@@ -1,3 +1,6 @@
+itemDropdownHeader('signInDropdown', 'Entrar');
+itemDropdownHeader('signUp', 'Cadastre-se');
+
 form('templateSignUp', 'post', 'signUpComponent')
 
 titleForm('titleSingUp', 'Criar uma conta', 'templateSignUp')

@@ -32,7 +32,7 @@ function dropdownBodyHeader() {
 dropdownBodyHeader();
 
 function itemDropdownHeader(id, title) {
-    var item = `<li><button class="item-dropdown" id="${id}">${title}</button></li>`;
+    var item = `<li class="item-dropdown" id="${id}">${title}</li>`;
     $('.dropdown-menu').append(item)
 }
 

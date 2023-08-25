@@ -6,8 +6,6 @@
   font-family: 'Inconsolata', monospace;
 }
 
-
-
 #header {
   position: fixed;
   top: 0;
@@ -48,6 +46,11 @@
   height: 20px;
 }
 
+.dropdown-menu {
+  top: 100px;
+  background: #262323;
+}
+
 .dropdown-menu:focus {
   background-color: #262323;
 }
@@ -62,13 +65,25 @@
 }
 
 .item-dropdown  {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
   width: 100%;
-  background: none;
-  text-align: left;
+  height: 35px;
+  padding: 0px 10px;
+  color: #fff;
   border: none;
 }
 
 .item-dropdown:hover {
-  background-color: #f5f1f1;
+  background-color: #ffffff0d;
 }
 
+#svgExit {
+  height: 20px;
+}
+
+#signOut {
+  justify-content: space-between;
+  align-items: center;
+}

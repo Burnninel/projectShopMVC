@@ -26,5 +26,5 @@ titleAddressCard();
 
 btnAlterAddressCard();
 
-svgAddressInfo('checkboxOn', 'btnAlterLeft', svgCard);
-svgAddressInfo('checkboxOff', 'btnAlterRight', svgMap);
+svgAddressInfo('checkboxOn', 'btnMap', svgCard);
+svgAddressInfo('checkboxOff', 'btnCard', svgMap);

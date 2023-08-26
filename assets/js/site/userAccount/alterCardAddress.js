@@ -1,28 +1,28 @@
-$(document).ready(function() {
-    $('#btnAlterLeft').addClass('itemActive');
+function checkboxAlter() {
+    $('#btnMap').addClass('itemActive');
 
     $('#checkboxAlterAddressCard').click(function() {
        
-        if ($('#btnAlterRight').hasClass('itemActive')) {
-            $('#btnAlterRight').removeClass('itemActive');
+        if ($('#btnCard').hasClass('itemActive')) {
+            $('#btnCard').removeClass('itemActive');
 
-            $('#btnAlterRight').removeClass('checkboxOn');
-            $('#btnAlterLeft').addClass('checkboxOn');
-            $('#btnAlterRight').addClass('checkboxOff');
+            $('#btnCard').removeClass('checkboxOn');
+            $('#btnMap').addClass('checkboxOn');
+            $('#btnCard').addClass('checkboxOff');
 
-            $('#btnAlterLeft').addClass('itemActive');
+            $('#btnMap').addClass('itemActive');
 
             $('#formCard').hide();
             $('#formAddress').show();
 
             $('#titleHeaderAddressCard').text('Adicionar endereço');
         } else {
-            $('#btnAlterRight').addClass('itemActive');
-            $('#btnAlterLeft').removeClass('itemActive');
+            $('#btnCard').addClass('itemActive');
+            $('#btnMap').removeClass('itemActive');
 
-            $('#btnAlterLeft').removeClass('checkboxOn');
-            $('#btnAlterRight').addClass('checkboxOn');
-            $('#btnAlterLeft').addClass('checkboxOff');            
+            $('#btnMap').removeClass('checkboxOn');
+            $('#btnCard').addClass('checkboxOn');
+            $('#btnMap').addClass('checkboxOff');            
             
             $('#formAddress').hide();
             $('#formCard').show();
@@ -32,4 +32,6 @@ $(document).ready(function() {
 
     });
 
-});
+}
+
+checkboxAlter();

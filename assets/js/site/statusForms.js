@@ -84,7 +84,7 @@ function removeErrorFormAccount(idSvg, chechbox, search, btn) {
 
 function removeErrorAlterCheckbox() {
 
-    $('svg').css('color', '#fff');
+    $('#svgSearchBtn').css('color', '#fff');
     $('#titleHeaderAddressCard').css('color', '#fff');
     $('#checkboxAlterAddressCard').css('border-color', '#fff');
     $('#profileBody').css('border-color', '#fff');

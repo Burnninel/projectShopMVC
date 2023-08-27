@@ -16,8 +16,8 @@
 }
 
 #myAccount {
-    width: 480px;
-    padding: 20px;
+    width: 490px;
+    padding: 16px;
     border: 1px #fff solid;
     border-radius: 12px;
 }
@@ -28,7 +28,7 @@
     align-items: center;
     border: 1px #fff solid;
     border-radius: 12px;
-    height: 227px;
+    height: 250px;
     width: 100%;
     padding: 15px;
 }

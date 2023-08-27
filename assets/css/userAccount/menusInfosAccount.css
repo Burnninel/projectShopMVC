@@ -6,7 +6,7 @@
     border: 1px solid #fff;
 }
 
-.componentSvgInfoProfile {
+.svgMenuProfile {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,6 +17,6 @@
     transition: 0.5s;
 }
 
-.componentSvgInfoProfile:hover {
+.svgMenuProfile:hover {
     background-color: #ffffff1e;
 }

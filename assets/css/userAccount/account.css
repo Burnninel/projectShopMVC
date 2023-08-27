@@ -7,7 +7,7 @@
     height: 100%;
 }
 
-.cardImgProfile {
+#cardAccount {
     display: flex;
     align-items: center;
     justify-content: space-between;

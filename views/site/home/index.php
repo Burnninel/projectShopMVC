@@ -37,13 +37,13 @@
 
   <script src="<?php echo $url; ?>/assets/libs/jquery/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  <script src="<?php echo $url; ?>/assets/js/home/mainHomePage.js"></script>
   <script src="<?php echo $url; ?>/assets/js/header.js"></script>
-  <script src="<?php echo $url; ?>/assets/js/home/productTypeCard.js"></script>
-  <script src="<?php echo $url; ?>/assets/js/home/home.js"></script>
-  <script src="<?php echo $url; ?>/assets/js/home/banner.js"></script>
-  <script src="<?php echo $url; ?>/assets/js/home/carousel.js"></script>
-  <script src="<?php echo $url; ?>/assets/js/home/footer.js"></script>
+  <script src="<?php echo $url; ?>/assets/js/site/home/mainHomePage.js"></script>
+  <script src="<?php echo $url; ?>/assets/js/site/home/productTypeCard.js"></script>
+  <script src="<?php echo $url; ?>/assets/js/site/home/home.js"></script>
+  <script src="<?php echo $url; ?>/assets/js/site/home/banner.js"></script>
+  <script src="<?php echo $url; ?>/assets/js/site/home/carousel.js"></script>
+  <script src="<?php echo $url; ?>/assets/js/site/home/footer.js"></script>
 
 </body>
 

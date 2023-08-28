@@ -1,0 +1,82 @@
+#infosAccount {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10px 12px 0px 6px;
+}
+
+#headerInfosAccount {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#titleInfosAccount {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+}
+
+#svgInfosAccount {
+    display: flex;
+}
+
+.svgAccount {
+    cursor: pointer;
+    margin: 0px 4px;
+}
+
+.svgAccount:hover {
+    transform: scale(1.1);
+}
+
+#accountDetails {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.elementAccount {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    border-bottom: 1px #cfcbcb solid;
+    margin-bottom: 12px;
+}
+
+.inputAccountDetails {
+    outline: none;
+    user-select: auto;
+    caret-color: black;
+    text-transform: none;
+    background-color: transparent;
+    border: none;
+    color: #ffffffb8;
+    font-size: 12px;
+    width: 100%;
+}
+
+.labelAccountDetails {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+#btnInfosAccount {
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px #fff solid;
+    background-color: transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 16px;
+    width: 100%;
+    height: 25px;
+}

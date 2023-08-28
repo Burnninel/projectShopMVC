@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/card.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/loading.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/menusInfosAccount.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>/assets/css/userAccount/infosAccount/infosAccount.css">
 
 	<title>Entre ou Cadastre-se</title>
 
@@ -92,6 +93,8 @@
 	<script src="<?php echo $url; ?>/assets/js/site/userAccount/card/cardInfo.js"></script>
 	<script src="<?php echo $url; ?>/assets/js/site/userAccount/card/regex.js"></script>
 	<script src="<?php echo $url; ?>/assets/js/site/userAccount/card/validateCard.js"></script>
+	
+	<script src="<?php echo $url; ?>/assets/js/site/userAccount/infosAccount/infosAccount.js"></script>
 
 	<script src="<?php echo $url; ?>/assets/js/site/statusForms.js"></script>
 

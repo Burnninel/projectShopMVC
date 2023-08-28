@@ -36,18 +36,19 @@ $('#editInfosAccount').click(function() {
 
     
     $('#btnInfosAccount').css({
-        'border-color': '#fff',
         'color': '#fff',
+        'cursor': 'pointer',
+        'border-color': '#fff',
         'background-color': 'transparent'
     });
 
     $('#btnInfosAccount').hover(
-    function() {
-        $(this).css({ 'background-color': '#ffffff11' });
-    },
-    
-    function() {
-        $(this).css({ 'background-color': 'transparent' });
-    }
+        function() {
+            $(this).css({ 'background-color': '#ffffff11' });
+        },
+        
+        function() {
+            $(this).css({ 'background-color': 'transparent' });
+        }
     );
 });

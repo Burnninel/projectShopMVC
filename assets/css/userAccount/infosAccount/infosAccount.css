@@ -78,6 +78,7 @@
     text-align: center;
     text-transform: uppercase;
     border: 1px #ffffffb8 solid;
+    cursor: not-allowed;
     background-color: #ffffff11;
     color: #ffffffb8;
     font-size: 12px;

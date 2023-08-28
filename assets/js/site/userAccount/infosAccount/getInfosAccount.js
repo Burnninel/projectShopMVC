@@ -31,6 +31,6 @@ $('#editInfosAccount').click(function() {
     $('input').prop("disabled", false);
     $('#userPassword').val('');
     $('.lockInput').remove();
-    $('.inputStyling').append(svgUnlockInput);
+    $('.elementInputDetails').append(svgUnlockInput);
 
 });

@@ -80,7 +80,7 @@
 	<script src="<?php echo $url; ?>/assets/js/site/userAccount/alterCardAddress.js"></script>
 
 	<script src="<?php echo $url; ?>/assets/js/site/userAccount/profile/cardProfile.js"></script>
-	<script src="<?php echo $url; ?>/assets/js/site/userAccount/profile/getInfosAccount.js"></script>
+	<script src="<?php echo $url; ?>/assets/js/site/userAccount/profile/getInfosProfile.js"></script>
 
 	<script src="<?php echo $url; ?>/assets/js/site/userAccount/address/bodyFormAddress.js"></script>
 	<script src="<?php echo $url; ?>/assets/js/site/userAccount/address/cep.js"></script>
@@ -95,6 +95,7 @@
 	<script src="<?php echo $url; ?>/assets/js/site/userAccount/card/validateCard.js"></script>
 	
 	<script src="<?php echo $url; ?>/assets/js/site/userAccount/infosAccount/infosAccount.js"></script>
+	<script src="<?php echo $url; ?>/assets/js/site/userAccount/infosAccount/getInfosAccount.js"></script>
 
 	<script src="<?php echo $url; ?>/assets/js/site/statusForms.js"></script>
 

@@ -35,7 +35,7 @@ class UserData {
             ':id' => $id,
         );
 
-        return $this->pdoQuery->fetch('SELECT name, lastName, imgProfile, dateCreate FROM usuario WHERE id = :id', $pdo);
+        return $this->pdoQuery->fetch('SELECT name, lastName, email, password, imgProfile, dateCreate FROM usuario WHERE id = :id', $pdo);
 
     }
 

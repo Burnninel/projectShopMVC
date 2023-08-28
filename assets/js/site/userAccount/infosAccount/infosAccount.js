@@ -66,7 +66,7 @@ elementsAccountDetails('userName', 'Email', 'text', 'userEmail', 'userEmail', 'd
 elementsAccountDetails('userName', 'Senha', 'password', 'userPassword', 'userPassword', 'disabled');
 
 function btnInfosProfile() {
-    const btn = `<button id="btnInfosAccount" type="button">salvar</button>`;
+    const btn = `<button id="btnInfosAccount" type="button" disabled>salvar</button>`;
     $('#accountDetails').append(btn);
 }
 

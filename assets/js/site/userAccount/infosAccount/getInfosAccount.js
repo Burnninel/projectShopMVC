@@ -5,10 +5,10 @@ function getInfosUser() {
         type: 'GET',
         dataType: 'json',
         success: function (data) {
-            console.log(data.name)
-            console.log(data.lastName)
-            console.log(data.email)
-            console.log(data.password)
+            $('#userName').val(data.name)
+            $('#userLastname').val(data.lastName)
+            $('#userEmail').val(data.email)
+            $('#userPassword').val(data.password)
         },
         error: function (xhr, status, error) {
             if (xhr.responseText) {

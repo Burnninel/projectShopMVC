@@ -82,4 +82,21 @@ class UserCrud {
         return $result ? true : false;
     }
 
+    public function updateDetailsAccount($name, $lastname, $email, $usuario_id) {
+    
+        $pdo = array(
+            ':name'       => $name,
+            ':lastname'   => $lastname,
+            ':email'      => $email,
+            ':usuario_id' => $usuario_id
+        );
+
+        $values = 'name = :name, lastname = :lastname, email = :email';
+        $clausule = 'WHERE id = :usuario_id';
+
+        $result = $this->pdoCrud->update('usuario', $values, $clausule, $pdo);
+
+        return $result ? true : false;
+    }
+
 }

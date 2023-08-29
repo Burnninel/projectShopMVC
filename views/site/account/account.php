@@ -96,6 +96,7 @@
 	
 	<script src="<?php echo $url; ?>/assets/js/site/userAccount/infosAccount/infosAccount.js"></script>
 	<script src="<?php echo $url; ?>/assets/js/site/userAccount/infosAccount/getInfosAccount.js"></script>
+	<script src="<?php echo $url; ?>/assets/js/site/userAccount/infosAccount/submitFormAccount.js"></script>
 
 	<script src="<?php echo $url; ?>/assets/js/site/statusForms.js"></script>
 

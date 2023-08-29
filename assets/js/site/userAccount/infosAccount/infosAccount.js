@@ -40,7 +40,7 @@ function svgInfosAccount() {
 svgInfosAccount()
 
 function accountDetails() {
-    const accountDetails = `<div id="accountDetails"></div>`;
+    const accountDetails = `<form id="accountDetails" method="post"></form>`;
     $('#infosAccount').append(accountDetails);
 };
 

@@ -45,7 +45,8 @@ function validateProfileFormFields() {
     fieldsToValidate.forEach((id, index) => {
         let tooltipMessage = id === '#userName' ? 'Nome inválido' :
                              id === '#userLastname' ? 'Sobrenome inválido' :
-                             id === '#userEmail' ? 'Email inválido' : 'Senha inválida';
+                             id === '#userEmail' ? 'Email inválido' :
+                             'Senha inválida';
 
         let inputElement = $(id);
 
@@ -94,8 +95,6 @@ function handleProfileFormKeyup() {
     });
 };
 
-handleProfileFormKeyup();
-
 function handleSubmitAccountUpdate() {
     validateProfileFormFields();
 
@@ -108,19 +107,26 @@ function handleSubmitAccountUpdate() {
             data: form.serialize(),
             dataType: 'json',
             complete: function (response) {
-                console.log('back: ' + response.responseJSON.result);
-                if(response.responseJSON.result == false) {
+                if(response.responseJSON.errors == 'userPassword') {
                     $('#userPasswordComponent').css({ 'border-color': '#ec2626', 'color': '#ec2626' });
                     $('#userPassword').addClass('errorInputProfile');
                     addErrorIconProfile('userPasswordElement', 'Senha inválida');
                     errorFormProfile('#ec2626');
-                }
+                };
+
+                if(response.responseJSON.errors == 'userEmail') {
+                    $('#userEmailComponent').css({ 'border-color': '#ec2626', 'color': '#ec2626' });
+                    $('#userEmail').addClass('errorInputProfile');
+                    addErrorIconProfile('userEmailElement', 'Email inválido');
+                    errorFormProfile('#ec2626');
+                };
             }
         });
-    }
+    };
 };
 
 $('#btnInfosAccount').click(function () {
     handleProfileFormStatus();
     handleSubmitAccountUpdate();
+    handleProfileFormKeyup();
 });

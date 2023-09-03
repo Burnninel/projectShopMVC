@@ -170,16 +170,26 @@ class AccountController extends Controller
 		$userPassword = filter_var($_POST['userPassword']);
 
 		$detailsValid = true;
+		$errors = array();
 
-		if (!$userEmail || $userPassword !== $password || !$userName || !$userLastname) {
+		if (!$userName || !$userLastname) {
 			$detailsValid = false;
-		} else {
-			$detailsValid = true;
+		}
+
+		if (!$userEmail) {
+			$detailsValid = false;
+			$errors[] = 'userEmail';
+		}
+
+		if ($userPassword !== $password) {
+			$detailsValid = false;
+			$errors[] = 'userPassword';
 		}
 
 		if (!$detailsValid) {
 			echo json_encode(array(
-				'result' => false
+				'result' => false,
+				'errors' => $errors
 			));
 
 			return false;

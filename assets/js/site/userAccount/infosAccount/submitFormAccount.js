@@ -17,6 +17,12 @@ function addErrorIconProfile(element, tooltip) {
     });
 };
 
+function errorFormProfile(color) {
+    $('#btnInfosAccount').css({ 'color': `${color}`, 'border-color': `${color}` });
+    $('#titleInfosAccount').css('color', `${color}`);
+    $('#profileBody').css('border-color', `${color}`);
+};
+
 function validateInputProfile(id, tooltip) {
     if (!id.val()) {
         errorFormProfile('#ec2626');
@@ -45,12 +51,6 @@ function validateProfileFormFields() {
 
         validateInputProfile(inputElement, tooltipMessage);
     });
-};
-
-function errorFormProfile(color) {
-    $('#btnInfosAccount').css({ 'color': `${color}`, 'border-color': `${color}` });
-    $('#titleInfosAccount').css('color', `${color}`);
-    $('#profileBody').css('border-color', `${color}`);
 };
 
 function handleProfileFormStatus() {
@@ -99,17 +99,25 @@ handleProfileFormKeyup();
 function handleSubmitAccountUpdate() {
     validateProfileFormFields();
 
-    const form = $('#accountDetails');
-
-    $.ajax({
-        url: 'http://localhost/shopMVC/updateDetailsAccount',
-        type: 'POST',
-        data: form.serialize(),
-        dataType: 'json',
-        complete: function (response) {
-            console.log('back: ' + response.responseJSON.result);
-        }
-    });
+    if(dataAccountValid) {
+        const form = $('#accountDetails');
+    
+        $.ajax({
+            url: 'http://localhost/shopMVC/updateDetailsAccount',
+            type: 'POST',
+            data: form.serialize(),
+            dataType: 'json',
+            complete: function (response) {
+                console.log('back: ' + response.responseJSON.result);
+                if(response.responseJSON.result == false) {
+                    $('#userPasswordComponent').css({ 'border-color': '#ec2626', 'color': '#ec2626' });
+                    $('#userPassword').addClass('errorInputProfile');
+                    addErrorIconProfile('userPasswordElement', 'Senha inválida');
+                    errorFormProfile('#ec2626');
+                }
+            }
+        });
+    }
 };
 
 $('#btnInfosAccount').click(function () {

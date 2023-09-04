@@ -26,7 +26,7 @@ function getInfosUser() {
 getInfosUser();
  
 $('#editInfosAccount').one('click', function() {
-    $('.elementInputDetails').each(function(index) {
+    $('.elementInputData').each(function(index) {
         const parentId = $(this).attr('id');
         const svgId = parentId + 'Svg';
                                        

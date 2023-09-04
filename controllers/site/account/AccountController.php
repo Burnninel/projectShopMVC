@@ -154,7 +154,7 @@ class AccountController extends Controller
 		));
 	}
 
-	public function updateDetailsAccount()
+	public function updateDataAccount()
 	{
 
 		$getID = new UserSession;
@@ -169,24 +169,24 @@ class AccountController extends Controller
 		$userEmail = filter_var($_POST['userEmail'], FILTER_VALIDATE_EMAIL);
 		$userPassword = filter_var($_POST['userPassword']);
 
-		$detailsValid = true;
+		$dataValid = true;
 		$errors = array();
 
 		if (!$userName || !$userLastname) {
-			$detailsValid = false;
+			$dataValid = false;
 		}
 
 		if (!$userEmail) {
-			$detailsValid = false;
+			$dataValid = false;
 			$errors[] = 'userEmail';
 		}
 
 		if ($userPassword !== $password) {
-			$detailsValid = false;
+			$dataValid = false;
 			$errors[] = 'userPassword';
 		}
 
-		if (!$detailsValid) {
+		if (!$dataValid) {
 			echo json_encode(array(
 				'result' => false,
 				'errors' => $errors
@@ -195,8 +195,8 @@ class AccountController extends Controller
 			return false;
 		}
 
-		$updateDetailsAccount = new UserCrud;
-		$updateDetailsAccount->updateDetailsAccount($userName, $userLastname, $userEmail, $usuario_id);
+		$updateDataAccount = new UserCrud;
+		$updateDataAccount->updateDataAccount($userName, $userLastname, $userEmail, $usuario_id);
 
 		echo json_encode(array(
 			'result' => true

@@ -95,14 +95,16 @@ function handleProfileFormKeyup() {
     });
 };
 
+handleProfileFormKeyup();
+
 function handleSubmitAccountUpdate() {
     validateProfileFormFields();
 
     if(dataAccountValid) {
-        const form = $('#accountDetails');
+        const form = $('#accountData');
     
         $.ajax({
-            url: 'http://localhost/shopMVC/updateDetailsAccount',
+            url: 'http://localhost/shopMVC/updateDataAccount',
             type: 'POST',
             data: form.serialize(),
             dataType: 'json',
@@ -156,5 +158,4 @@ function handleSubmitAccountUpdate() {
 $('#btnInfosAccount').click(function () {
     handleProfileFormStatus();
     handleSubmitAccountUpdate();
-    handleProfileFormKeyup();
 });

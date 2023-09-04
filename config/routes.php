@@ -24,7 +24,7 @@ $commonPost = array(
 	'address' => 'AccountController/address',
 	'card' => 'AccountController/card',
 	'imgProfile' => 'AccountController/imgProfile',
-	'updateDetailsAccount' => 'AccountController/updateDetailsAccount',
+	'updateDataAccount' => 'AccountController/updateDataAccount',
 );
 
 $commonRoutes = array_merge($commonRoutes, $commonPost);

@@ -39,35 +39,35 @@ function svgInfosAccount() {
 
 svgInfosAccount()
 
-function accountDetails() {
-    const accountDetails = `<form id="accountDetails" method="post"></form>`;
-    $('#infosAccount').append(accountDetails);
+function accountData() {
+    const accountData = `<form id="accountData" method="post"></form>`;
+    $('#infosAccount').append(accountData);
 };
 
-accountDetails();
+accountData();
 
-function elementsAccountDetails(forLabel, textLabel, type, nameInput, id, statusInput) {
+function elementsAccountData(forLabel, textLabel, type, nameInput, id, statusInput) {
     let elementsAccount = `
         <div class="elementAccount" id="${id + 'Component'}">
-            <label for="${forLabel}" class="labelAccountDetails">${textLabel}:</label>
-            <div id="${id + 'Element'}" class="elementInputDetails">
-                <input type="${type}" name="${nameInput}" id="${id}" class="inputAccountDetails" ${statusInput}>
+            <label for="${forLabel}" class="labelAccountData">${textLabel}:</label>
+            <div id="${id + 'Element'}" class="elementInputData">
+                <input type="${type}" name="${nameInput}" id="${id}" class="inputAccountData" ${statusInput}>
                 <svg xmlns="http://www.w3.org/2000/svg" height="1rem" fill="none" viewBox="0 0 24 24" stroke="#ffffffb8" stroke-width="1.5" class="lockInput"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" /></svg>
             </div>
         </div>
     `;
 
-    $('#accountDetails').append(elementsAccount);
+    $('#accountData').append(elementsAccount);
 };
 
-elementsAccountDetails('userName', 'Nome', 'text', 'userName', 'userName', 'disabled');
-elementsAccountDetails('userName', 'Sobrenome', 'text', 'userLastname', 'userLastname', 'disabled');
-elementsAccountDetails('userName', 'Email', 'text', 'userEmail', 'userEmail', 'disabled');
-elementsAccountDetails('userName', 'Senha', 'password', 'userPassword', 'userPassword', 'disabled');
+elementsAccountData('userName', 'Nome', 'text', 'userName', 'userName', 'disabled');
+elementsAccountData('userName', 'Sobrenome', 'text', 'userLastname', 'userLastname', 'disabled');
+elementsAccountData('userName', 'Email', 'text', 'userEmail', 'userEmail', 'disabled');
+elementsAccountData('userName', 'Senha', 'password', 'userPassword', 'userPassword', 'disabled');
 
 function btnInfosProfile() {
     const btn = `<button id="btnInfosAccount" type="button" disabled>salvar</button>`;
-    $('#accountDetails').append(btn);
+    $('#accountData').append(btn);
 }
 
 btnInfosProfile();

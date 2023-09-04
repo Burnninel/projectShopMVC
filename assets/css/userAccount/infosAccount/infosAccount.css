@@ -37,7 +37,7 @@
     transform: scale(1.1);
 }
 
-#accountDetails {
+#accountData {
     width: 100%;
     margin-top: 16px;
 }
@@ -50,13 +50,13 @@
     margin-bottom: 12px;
 }
 
-.elementInputDetails {
+.elementInputData {
     position: relative;
     display: flex;
     width: 100%;
 }
 
-.inputAccountDetails {
+.inputAccountData {
     outline: none;
     user-select: auto;
     caret-color: #fff;
@@ -68,7 +68,7 @@
     width: 100%;
 }
 
-.labelAccountDetails {
+.labelAccountData {
     text-transform: uppercase;
     font-size: 12px;
     margin-right: 10px;

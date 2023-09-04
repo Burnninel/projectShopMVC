@@ -82,7 +82,7 @@ class UserCrud {
         return $result ? true : false;
     }
 
-    public function updateDetailsAccount($name, $lastname, $email, $usuario_id) {
+    public function updateDataAccount($name, $lastname, $email, $usuario_id) {
     
         $pdo = array(
             ':name'       => $name,

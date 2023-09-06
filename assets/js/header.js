@@ -48,9 +48,4 @@ $(document).on('click', '#signUp', function() {
     
 });
 
-$(document).on('click', '#logo', function() {
-   
-    window.location.href = 'http://localhost/shopMVC/';
-    
-});
 

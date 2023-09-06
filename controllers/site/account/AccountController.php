@@ -202,4 +202,27 @@ class AccountController extends Controller
 			'result' => true
 		));
 	}
+
+	public function signOut() 
+	{
+
+		$getID = new UserSession;
+		$usuario_id = $getID->get('id');
+
+		if(!$usuario_id) {
+			echo json_encode(array(
+				'result' => false
+			));	
+
+			return false;
+		}
+
+		$obj = new UserSession();
+		$obj->deleteUser();
+		
+		echo json_encode(array(
+			'result' => true
+		));
+
+	}
 }

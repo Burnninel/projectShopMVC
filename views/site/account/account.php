@@ -38,12 +38,12 @@
 
 				<div id="cardAccount"></div>
 
-				<div id="infosProfile">
+				<div id="dataRegistrationScreen">
 					<div id="headerAlterAddressCard"></div>
 
 					<form method="post" id="formAddress"></form>
 
-			      <form method="post" id="formCard"></form>
+			      	<form method="post" id="formCard"></form>
 				</div>
 
 			</div>

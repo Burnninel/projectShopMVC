@@ -73,6 +73,11 @@ function btnInfosProfile() {
 btnInfosProfile();
 
 $('#menuAccount').click(function() {
-    $('#infosProfile').hide();
+    $('#dataRegistrationScreen').hide();
     $('#infosAccount').show();
+});
+
+$('#goHomeAccount').click(function() {
+    $('#infosAccount').hide();
+    $('#dataRegistrationScreen').show();
 });

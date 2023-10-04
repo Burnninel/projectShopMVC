@@ -3,9 +3,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-top: 8px;
     width: 100%;
     height: 100%;
-    padding: 10px 12px 0px 6px;
+}
+
+#accountData {
+    width: 100%;
+    padding: 0px 12px 0px 6px;
 }
 
 #headerInfosAccount {

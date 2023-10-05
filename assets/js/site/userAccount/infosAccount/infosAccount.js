@@ -78,6 +78,5 @@ $('#menuAccount').click(function() {
 });
 
 $('#goHomeAccount').click(function() {
-    $('#infosAccount').hide();
-    $('#dataRegistrationScreen').show();
+    window.location.href = 'http://localhost/shopMVC/account';
 });
